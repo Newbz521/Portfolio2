@@ -1,11 +1,55 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./landing.css";
+import Magazine from "../components/magazine.js";
+import DDR from "../files/DDR.jpeg";
+import Inner from "../files/inner.jpeg";
+import Maps from "../files/maps.jpeg";
+import Hater from "../files/Hater.jpeg";
+
 export default function Landing(props) {
   const [show, setShow] = useState("none");
   const [slideIn, setSlideIn] = useState({ display: "none" });
   const [toggle, setToggle] = useState(true);
-
+  const allProjects = [
+    {
+      name: "Hater",
+      git: "https://github.com/Newbz521/hater",
+      url: "https://haterip.netlify.app/",
+      img: Hater,
+      tag: "Hater",
+      project: "project1",
+    },
+    {
+      name: "Inner Bod",
+      git: "https://github.com/Newbz521/TheInnerBod",
+      url: "https://theinnerbod.netlify.app/",
+      img: Inner,
+      tag: "Inner",
+      project: "project2",
+    },
+    {
+      name: "Places",
+      git: "https://github.com/Newbz521/Places-API-Reac-Front-End",
+      url: "https://vermillion-toffee-d0faa8.netlify.app/",
+      img: Maps,
+      tag: "Places",
+      project: "project3",
+    },
+    {
+      name: "DDR",
+      git: "https://github.com/Newbz521/DDR",
+      url: "https://newbz521.github.io/DDR/",
+      img: DDR,
+      tag: "DDR",
+      project: "project4",
+    },
+  ];
+  const [current, setCurrent] = useState("none");
+  function changeProject(e) {
+    setCurrent(e.target.dataset.key);
+    console.log(e.target.dataset.key);
+  }
   return (
     <div className="overallContainer">
       <div className="trainContainer">
@@ -44,6 +88,19 @@ export default function Landing(props) {
       </div>
       <>
         <div className="landingContainer1">
+          {allProjects.map(
+            (data) =>
+              data.tag.includes(current) && (
+                <Magazine
+                  img={data.img}
+                  title={data.name}
+                  setCurrent={setCurrent}
+                  url={data.url}
+                  git={data.git}
+                ></Magazine>
+              )
+          )}
+
           <div className="station">
             <div class="randomOnecharMovement">
               <div class="randomOnelargeContainer">
@@ -146,9 +203,15 @@ export default function Landing(props) {
                     <div className="storeCenterBottom">
                       <div className="magRow">
                         <div className="mags">
-                          <div className="magazine">Project</div>
-                          <div className="magazine">Project</div>
-                          <div className="magazine">Project</div>
+                          {allProjects.map((data) => (
+                            <div
+                              className="magazine"
+                              data-key={data.tag}
+                              onClick={changeProject}
+                            >
+                              {data.tag}
+                            </div>
+                          ))}
                         </div>
                         <div className="shelf"></div>
                       </div>
