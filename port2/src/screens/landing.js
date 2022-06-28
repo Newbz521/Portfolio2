@@ -419,6 +419,38 @@ export default function Landing(props) {
                 <div className="lamp2"></div>
               </div>
             </div>
+            <div className="infoContainer">
+              <div className="stationSignContainer">Contact Blvd</div>
+              <div className="info">
+                <div className="infoLeft"></div>
+                <div className="infoMiddle">
+                  <div className="infoScreen">
+                    <div className="infoText">
+                      <div className="flier">
+                        <a
+                          className="flierText"
+                          href="https://www.linkedin.com/in/lawrenceyee91/"
+                          target="_blank"
+                        >
+                          LinkedIn
+                        </a>
+                      </div>
+                      <div className="flier">
+                        <a
+                          href="https://github.com/Newbz521"
+                          target="_blank"
+                          className="flierText"
+                        >
+                          GitHub
+                        </a>
+                      </div>
+                    </div>
+                    <div className="infoTextRight"></div>
+                  </div>
+                </div>
+                <div className="infoRight"></div>
+              </div>
+            </div>
             <div className="pole">
               <div className="stationName">
                 <div className="stationNameBorder">

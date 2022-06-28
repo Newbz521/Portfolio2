@@ -487,6 +487,7 @@
   align-items: flex-end;
   z-index: 8;
 }
+
 .kiosk {
   display: flex;
   width: 45%;
@@ -1274,4 +1275,109 @@
   100% {
     transform: translate(0, -0px);
   }
+}
+
+.infoContainer {
+  display: flex;
+  height: 100%;
+  width: 80%;
+  /* border: 1px solid blue; */
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 8;
+  position: absolute;
+}
+
+.info {
+  display: flex;
+  width: 45%;
+  height: 70%;
+  /* border: 1px solid blue; */
+  align-items: flex-start;
+  color: black;
+  box-shadow: 0 0 10px 2px rgb(107, 106, 106);
+  border-radius: 10px 10px 0 0;
+}
+
+.infoLeft,
+.infoRight {
+  height: 100%;
+  width: 5%;
+  border: 1px solid grey;
+  background-color: rgb(177, 174, 174);
+}
+
+.infoMiddle {
+  font-size: 20px;
+  height: 95%;
+  width: 90%;
+  background-color: rgb(177, 174, 174);
+  /* font-size: 12px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info:hover {
+  /* transform: scale(1.2); */
+  color: grey;
+  transition-duration: 1s;
+}
+.infoScreen {
+  display: flex;
+  padding: 5px;
+  /* background-color: white; */
+  font-size: 12px;
+  width: 95%;
+  height: 90%;
+  /* gap: 1%; */
+  justify-content: space-around;
+  align-items: center;
+}
+.infoTextRight {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  overflow: scroll;
+  background: url("https://i.pinimg.com/564x/37/b6/8b/37b68b344b116e7176f06921427f9097.jpg");
+  background-size: 50%;
+  flex-direction: column;
+  padding-top: 1%;
+  padding-left: 1%;
+  box-shadow: inset 0 0 4px 2px rgb(0, 0, 0, 0.5);
+}
+.infoText {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  background: url("https://i.pinimg.com/564x/37/b6/8b/37b68b344b116e7176f06921427f9097.jpg");
+  background-size: 20%;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 1%;
+  padding-left: 1%;
+  color: black;
+  box-shadow: inset 0 0 4px 2px rgb(0, 0, 0, 0.5);
+  /* flex-wrap: wrap; */
+}
+.flier {
+  display: flex;
+  width: 30%;
+  height: 40%;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid yellow;
+  background-color: yellow;
+  color: black;
+  box-shadow: 5px 5px 5px 0.5px rgb(0, 0, 0, 0.3);
+}
+.flierText {
+  color: rgb(104, 103, 103);
+}
+.flier:hover {
+  box-shadow: 2px 2px 1px 0.5px rgb(0, 0, 0, 0.3);
+  transition-duration: 0.5s;
 }
