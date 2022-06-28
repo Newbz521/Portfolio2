@@ -567,7 +567,54 @@
   width: 10%;
   z-index: 5;
 }
-
+.chatContainer {
+  display: flex;
+  width: fit-content;
+  height: 15%;
+  bottom: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* border: 1px solid white; */
+  left: 22%;
+  background-image: url("./chat.png");
+  background-size: 95% 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.chatBubble {
+  display: flex;
+  margin: 20px;
+  color: rgb(91, 87, 87);
+  text-align: center;
+  width: fit-content;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes typeOut {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(0, 0, 0);
+  }
+}
 .charMovement {
   display: flex;
   position: relative;

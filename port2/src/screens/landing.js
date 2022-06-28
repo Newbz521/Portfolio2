@@ -50,6 +50,21 @@ export default function Landing(props) {
     setCurrent(e.target.dataset.key);
     console.log(e.target.dataset.key);
   }
+  const text = [
+    "I am from NYC!",
+    "I am a Software.Dev",
+    "Hi! My name is Lawrence Yee",
+  ];
+
+  const [word, setWord] = useState("Hi! My name is Lawrence Yee");
+  let index = 0;
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWord(text[index++ % text.length]);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="overallContainer">
       <div className="trainContainer">
@@ -260,6 +275,9 @@ export default function Landing(props) {
               </div>
             </div>
             <div className="middleContainer">
+              <div className="chatContainer">
+                <div className="chatBubble">{word}</div>
+              </div>
               <div class="randomOnecharMovement">
                 <div class="randomOnelargeContainer">
                   <div class="Lawboxer">
