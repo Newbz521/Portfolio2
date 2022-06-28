@@ -585,12 +585,15 @@
 .chatBubble {
   display: flex;
   margin: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 25px;
   color: rgb(91, 87, 87);
   text-align: center;
   width: fit-content;
   height: 100%;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bolder;
   justify-content: center;
   align-items: center;
