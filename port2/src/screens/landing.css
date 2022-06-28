@@ -179,7 +179,7 @@
     rgba(255, 255, 255, 0.3)
   ); /*adds fading light*/
   z-index: -1;
-  box-shadow: 0 0 100px 1000px rgb(82, 82, 82, 0);
+  box-shadow: 0 0 100px 1px rgb(82, 82, 82, 0.3);
 }
 .lamp2:after {
   animation: blink 1s infinite;
@@ -489,12 +489,13 @@
 }
 .kiosk {
   display: flex;
-  width: 60%;
-  height: 60%;
+  width: 45%;
+  height: 70%;
   /* border: 1px solid blue; */
   align-items: flex-start;
   color: white;
   box-shadow: 0 0 10px 2px rgb(107, 106, 106);
+  border-radius: 10px 10px 0 0;
 }
 
 .kioskText:hover {
@@ -503,15 +504,22 @@
 .kioskLeft,
 .kioskRight {
   height: 100%;
-  width: 5%;
+  width: 8%;
   border: 1px solid grey;
   background-color: rgb(177, 174, 174);
 }
+.kioskLeft {
+  border-radius: 10px 0 0 0;
+}
+.kioskRight {
+  border-radius: 0 10px 0 0;
+}
+
 .kioskMiddle {
   font-size: 20px;
-  height: 80%;
+  height: 90%;
   width: 90%;
-  background-color: rgb(179, 176, 176);
+  background-color: rgb(63, 63, 63);
   /* font-size: 12px; */
   display: flex;
   justify-content: center;
@@ -528,7 +536,7 @@
   padding: 5px;
   background-color: white;
   font-size: 12px;
-  width: 95%;
+  width: 90%;
   height: 80%;
 }
 .kioskText {
