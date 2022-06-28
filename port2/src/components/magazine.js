@@ -18,7 +18,7 @@ export default function Magazine(props) {
             X
           </div>
           <h1>TIME</h1>
-          <h2>The Next Big "{props.title}"</h2>
+          <p>"The Next Big {props.title}"</p>
           <img className="screenShot" src={props.img}></img>
           <p>
             Now available on:{" "}
