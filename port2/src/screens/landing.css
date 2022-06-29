@@ -2,15 +2,55 @@
   display: flex;
   height: 100vh;
   width: 300%;
-  overflow: scroll;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  perspective: 10px;
+  overflow-y: hidden;
+  /* border: 2px solid blue; */
+  overflow-x: scroll;
   background-color: black;
+}
+.wrapper {
+  height: 77%;
+  width: 100%;
+  /* border: 2px solid red; */
+  /* position: absolute; */
+  perspective: 10px;
+}
+header {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.backDrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./tiles.jpg");
+  background-size: 4%;
+  align-items: flex-end;
+  overflow: hidden;
 }
 .landingContainer1,
 .landingContainer2,
 .landingContainer3 {
+  position: relative;
   display: flex;
   /* border: 2px solid red; */
   height: 100vh;
@@ -367,10 +407,12 @@
 }
 .magazine {
   display: flex;
-  height: 100%;
-  width: 15%;
-  background-color: red;
+  height: 7vh;
+  width: calc(7vh / 1.3);
+  background-color: rgb(250, 53, 53);
   color: white;
+  justify-content: center;
+  align-items: center;
   z-index: 8;
   box-shadow: 0 0 5px 2px rgb(250, 116, 116);
 }
@@ -413,25 +455,19 @@
 .trainContainer {
   display: flex;
   position: absolute;
-  width: 300%;
-  height: 77%;
+  width: 100%;
+  height: 100%;
   /* border: 1px solid blue; */
   z-index: 2;
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)),
-    url("./tiles.jpg");
-  background-size: 4%;
   align-items: flex-end;
   overflow: hidden;
-  /* background-attachment: fixed; */
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
 }
+
 .train {
+  background: none;
   display: flex;
   height: 70%;
   width: 300%;
-
-  /* background-color: blue; */
   flex-direction: row;
   position: absolute;
   bottom: 0;
@@ -440,7 +476,7 @@
   gap: 2%;
   animation: moving 10s linear infinite;
   right: -300%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 @keyframes moving {
   from {
@@ -1338,7 +1374,7 @@
   display: flex;
   width: 20%;
   height: 100%;
-  overflow: scroll;
+  overflow: hidden;
   background: url("https://i.pinimg.com/564x/37/b6/8b/37b68b344b116e7176f06921427f9097.jpg");
   background-size: 50%;
   flex-direction: column;
@@ -1353,7 +1389,7 @@
   background: url("https://i.pinimg.com/564x/37/b6/8b/37b68b344b116e7176f06921427f9097.jpg");
   background-size: 20%;
   flex-direction: row;
-
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
   padding-top: 1%;
@@ -1364,8 +1400,8 @@
 }
 .flier {
   display: flex;
-  width: 30%;
-  height: 40%;
+  width: calc(12vh / 1.3);
+  height: 12vh;
   margin-top: 5%;
   justify-content: center;
   align-items: center;

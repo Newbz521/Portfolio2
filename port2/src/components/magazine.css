@@ -3,9 +3,9 @@
   position: absolute;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  width: calc(80vh / 1.29);
-  background-color: red;
+  height: 70vh;
+  width: calc(70vh / 1.29);
+  background-color: rgb(241, 61, 61);
   z-index: 8;
   transform: scale(1);
   animation: slideIn 0.5s;
@@ -29,7 +29,7 @@
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  background-color: rgb(190, 189, 189);
+  background-color: rgb(212, 212, 212);
   color: rgb(66, 66, 66);
   width: 90%;
   height: 90%;
@@ -40,7 +40,7 @@
   width: 100%;
 }
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   font-family: "Old Standard TT", serif;
   text-shadow: 2px 2px #f64a4a;
 }
