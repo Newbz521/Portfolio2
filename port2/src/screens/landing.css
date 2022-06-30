@@ -46,7 +46,7 @@ header {
 }
 .backDrop {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   display: flex;
   background: linear-gradient(
@@ -84,22 +84,22 @@ header {
 .parallax::after {
   content: " ";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  border: 10px solid blue;
   left: 0;
-  transform: translateZ(-1px) scale(1);
-  background-size: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateZ(-1px) scale(2);
   z-index: -1;
   background-attachment: fixed;
 }
 
 .bg1::after {
   background-image: url("https://thumbs.dreamstime.com/b/subway-station-flat-color-vector-illustration-modern-urban-lifestyle-passengers-transportation-public-area-metro-d-simple-cartoon-243603175.jpg");
-  background-size: 90% 50%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale(0.5) blur(3px);
+  filter: grayscale(0.5) blur(2px);
 }
 .landingContainer1,
 .landingContainer2,
