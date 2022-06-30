@@ -16,8 +16,8 @@
   overflow-y: hidden;
   /* border: 2px solid blue; */
   overflow-x: hidden;
-  background: #5db8b9;
-  filter: contrast(110%);
+  background: #84fdff;
+  /* filter: brightness(1.2); */
 }
 .contentContainer {
   display: flex;
@@ -433,6 +433,7 @@ header {
   transform: scale(1.5);
   transform-origin: bottom;
   transition-duration: 0.5s;
+  cursor: pointer;
 }
 .shelf {
   width: 100%;

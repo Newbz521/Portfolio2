@@ -16,14 +16,14 @@ function Nav(props) {
       style={{ color: props.color, background: props.bg }}
     >
       <div className="stickyNav">
-        <li onClick={props.clickAboutMe} className="navLink">
-          <div className="icon">
-            <SiHomeadvisor />
-          </div>
-        </li>
         <li onClick={props.clickProjects} className="navLink">
           <div className="icon">
             <SiCodesandbox />
+          </div>
+        </li>
+        <li onClick={props.clickAboutMe} className="navLink">
+          <div className="icon">
+            <SiHomeadvisor />
           </div>
         </li>
         <li onClick={props.clickContact} className="navLink">

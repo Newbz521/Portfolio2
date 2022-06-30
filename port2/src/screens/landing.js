@@ -11,6 +11,7 @@ import Forrest from "./forrest.png";
 import Navbar from "../components/navbar/nav";
 import { Parallax, useParallax } from "react-scroll-parallax";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Resume from "../files/Resume.pdf";
 
 export default function Landing(props) {
   const [show, setShow] = useState("none");
@@ -478,33 +479,27 @@ export default function Landing(props) {
                           <div className="infoMiddle">
                             <div className="infoScreen">
                               <div className="infoText">
-                                <div className="flier">
-                                  <a
-                                    className="flierText"
-                                    href="https://www.linkedin.com/in/lawrenceyee91/"
-                                    target="_blank"
-                                  >
-                                    LinkedIn
-                                  </a>
-                                </div>
-                                <div className="flier">
-                                  <a
-                                    href="https://github.com/Newbz521"
-                                    target="_blank"
-                                    className="flierText"
-                                  >
-                                    GitHub
-                                  </a>
-                                </div>
-                                <div className="flier">
-                                  <a
-                                    href="https://github.com/Newbz521"
-                                    target="_blank"
-                                    className="flierText"
-                                  >
-                                    Resume
-                                  </a>
-                                </div>
+                                <a
+                                  className="flier"
+                                  href="https://www.linkedin.com/in/lawrenceyee91/"
+                                  target="_blank"
+                                >
+                                  <a className="flierText">LinkedIn</a>
+                                </a>
+                                <a
+                                  className="flier"
+                                  href="https://github.com/Newbz521"
+                                  target="_blank"
+                                >
+                                  <a className="flierText">GitHub</a>
+                                </a>
+                                <a
+                                  className="flier"
+                                  href={Resume}
+                                  target="_blank"
+                                >
+                                  <a className="flierText">Resume</a>
+                                </a>
                               </div>
                               <div className="infoTextRight"></div>
                             </div>
