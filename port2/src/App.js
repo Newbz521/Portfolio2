@@ -5,7 +5,6 @@ import Navbar from "./components/navbar/nav";
 function App() {
   return (
     <>
-      {/* <Navbar></Navbar> */}
       <Routes>
         <Route path="/" element={<Landing></Landing>}></Route>
       </Routes>
