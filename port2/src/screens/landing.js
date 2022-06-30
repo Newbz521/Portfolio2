@@ -99,13 +99,24 @@ export default function Landing(props) {
             <div className="wrapper">
               <header>
                 <div className="backDrop">
-                  <div className="backStation parallax bg1"></div>
-                  <div className="backStation parallax bg1"></div>
-                  <div className="backStation parallax bg1"></div>
-                  <div className="backStation parallax bg1"></div>
-                  <div className="backStation parallax bg1"></div>
-                  <div className="backStation parallax bg1"></div>
-                  <div className="backStation parallax bg1"></div>
+                  <div className="backStation ">
+                    <div className="bg parallax bg1"></div>
+                  </div>
+                  <div className="backStation ">
+                    <div className="bg parallax bg1"></div>
+                  </div>
+                  <div className="backStation ">
+                    <div className="bg parallax bg1"></div>
+                  </div>
+                  <div className="backStation ">
+                    <div className="bg parallax bg1"></div>
+                  </div>
+                  <div className="backStation ">
+                    <div className="bg parallax bg1"></div>
+                  </div>
+                  <div className="backStation ">
+                    <div className="bg parallax bg1"></div>
+                  </div>
                 </div>
 
                 <div className="trainContainer">
