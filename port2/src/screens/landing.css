@@ -642,14 +642,22 @@ header {
 }
 .kiosk:hover {
   /* transform: scale(1.2); */
+  color: rgb(61, 244, 61);
+  /* transition-duration: 1s; */
+}
+.kiosk:hover .kioskScreen {
+  background-color: rgb(215, 214, 214);
   color: grey;
   transition-duration: 1s;
+
+  box-shadow: 0 0 5px 5px white;
 }
 .kioskScreen {
   display: flex;
   padding: 5px;
-  background-color: white;
+  background-color: grey;
   font-size: 12px;
+  color: grey;
   width: 90%;
   height: 80%;
 }
