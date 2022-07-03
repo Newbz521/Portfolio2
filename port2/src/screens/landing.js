@@ -443,6 +443,7 @@ export default function Landing(props) {
                           <div className="kioskMiddle">
                             KIOSK
                             <div className="kioskScreen">
+                              <div className="kioskOff">Who am I?</div>
                               <div className="kioskText">
                                 {" "}
                                 From architecture designer to software engineer,
