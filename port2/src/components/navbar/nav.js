@@ -17,17 +17,17 @@ function Nav(props) {
     >
       <div className="stickyNav">
         <li onClick={props.clickProjects} className="navLink">
-          <div className="icon">
+          <div className="icon selected">
             <SiCodesandbox />
           </div>
         </li>
         <li onClick={props.clickAboutMe} className="navLink">
-          <div className="icon">
+          <div className="icon selected">
             <SiHomeadvisor />
           </div>
         </li>
         <li onClick={props.clickContact} className="navLink">
-          <div className="icon">
+          <div className="icon selected">
             <BiUser />
           </div>
         </li>
