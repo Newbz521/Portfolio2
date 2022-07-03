@@ -1518,3 +1518,49 @@ header {
   box-shadow: 2px 2px 1px 0.5px rgb(0, 0, 0, 0.3);
   transition-duration: 0.5s;
 }
+
+@media only screen and (max-width: 600px) {
+  .store {
+    width: 90%;
+    height: 80%;
+  }
+  .magazine {
+    font-size: 12px;
+  }
+  .leftPole {
+    display: none;
+  }
+  .rightPole {
+    display: none;
+  }
+  .poleMid {
+    display: none;
+  }
+  .pole {
+    display: none;
+  }
+  .storeContainer {
+    width: 90%;
+  }
+  .overallContainer {
+    width: 400%;
+  }
+  .landingContainer2 {
+    width: 200%;
+  }
+  .kioskContainer {
+    width: 80%;
+  }
+  .chatContainer {
+    left: 5%;
+    bottom: 60%;
+  }
+  .kiosk {
+    width: 70%;
+    height: 80%;
+  }
+  .info {
+    width: 90%;
+    height: 80%;
+  }
+}

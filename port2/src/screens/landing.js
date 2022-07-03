@@ -222,7 +222,7 @@ export default function Landing(props) {
                           </div>
                         </div>
                       </div>
-                      <div className="pole">
+                      <div className="pole leftPole">
                         <div className="poleThick"></div>
                         <div className="poleCenter"></div>
                         <div className="poleThick"></div>
@@ -291,9 +291,9 @@ export default function Landing(props) {
                                 </div>
                                 <div className="magRow">
                                   <div className="mags">
-                                    <div className="magazine">Project</div>
-                                    <div className="magazine">Project</div>
-                                    <div className="magazine">Project</div>
+                                    <div className="magazine">?</div>
+                                    <div className="magazine">?</div>
+                                    <div className="magazine">?</div>
                                   </div>
                                   <div className="shelf"></div>
                                 </div>
@@ -303,7 +303,7 @@ export default function Landing(props) {
                           </div>
                         </div>
                       </div>
-                      <div className="pole">
+                      <div className="pole leftPole">
                         <div className="stationName">
                           <div className="stationNameBorder">
                             New York
@@ -481,7 +481,7 @@ export default function Landing(props) {
                     ref={ContactRef}
                   >
                     <div className="station">
-                      <div className="pole">
+                      <div className="pole rightPole">
                         <div className="poleThick"></div>
                         <div className="poleCenter"></div>
                         <div className="poleThick"></div>
