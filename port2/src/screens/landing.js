@@ -40,6 +40,7 @@ export default function Landing(props) {
       img: Hater,
       tag: "Hater",
       project: "project1",
+      row: "1",
     },
     {
       name: "Inner Bod",
@@ -48,6 +49,7 @@ export default function Landing(props) {
       img: Inner,
       tag: "Inner",
       project: "project2",
+      row: "1",
     },
     {
       name: "Places",
@@ -56,6 +58,7 @@ export default function Landing(props) {
       img: Maps,
       tag: "Places",
       project: "project3",
+      row: "1",
     },
     {
       name: "DDR",
@@ -64,12 +67,34 @@ export default function Landing(props) {
       img: DDR,
       tag: "DDR",
       project: "project4",
+      row: "1",
+    },
+    {
+      name: "GRAPH",
+      git: "https://github.com/Newbz521/React-Graph-Component",
+      url: "https://graphcomponent.netlify.app/",
+      img: DDR,
+      tag: "GRAPH",
+      project: "project5",
+      row: "2",
+    },
+    {
+      name: "FUTURAMA",
+      git: "https://github.com/Newbz521/React-Graph-Component",
+      url: "https://futurama-react.netlify.app/",
+      img: DDR,
+      tag: "RAMA",
+      project: "project6",
+      row: "2",
     },
   ];
+  const size = 2;
+  const firstHalfProjects = allProjects.slice(0, size);
+
   const [current, setCurrent] = useState("none");
   function changeProject(e) {
     setCurrent(e.target.dataset.key);
-    console.log(e.target.dataset.key);
+    // console.log(e.target.dataset.key);
   }
   const text = [
     "I am from NYC!",
@@ -174,49 +199,49 @@ export default function Landing(props) {
                     )}
 
                     <div className="station">
-                      <div class="randomOnecharMovement">
-                        <div class="randomOnelargeContainer">
-                          <div class="Lawboxer">
-                            <div class="Lawcharacter">
-                              <div class="Lawhead">
-                                <div class="Lawface">
-                                  <div class="Laweyes"></div>
-                                  <div class="Laweyes2"></div>
+                      <div className="randomOnecharMovement">
+                        <div className="randomOnelargeContainer">
+                          <div className="Lawboxer">
+                            <div className="Lawcharacter">
+                              <div className="Lawhead">
+                                <div className="Lawface">
+                                  <div className="Laweyes"></div>
+                                  <div className="Laweyes2"></div>
                                 </div>
                               </div>
-                              <div class="LawupperBody">
-                                <div class="LawleftArm"></div>
-                                <div class="Lawtorso">
-                                  <div class="heart"></div>
+                              <div className="LawupperBody">
+                                <div className="LawleftArm"></div>
+                                <div className="Lawtorso">
+                                  <div className="heart"></div>
                                 </div>
-                                <div class="LawrightArm"></div>
+                                <div className="LawrightArm"></div>
                               </div>
-                              <div class="LawlowerBody">
-                                <div class="LawleftLeg"></div>
+                              <div className="LawlowerBody">
+                                <div className="LawleftLeg"></div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="randomTwocharMovement">
-                        <div class="randomTwolargeContainer">
-                          <div class="Lawboxer">
-                            <div class="Lawcharacter">
-                              <div class="Lawhead">
-                                <div class="Lawface">
-                                  <div class="Laweyes"></div>
-                                  <div class="Laweyes2"></div>
+                      <div className="randomTwocharMovement">
+                        <div className="randomTwolargeContainer">
+                          <div className="Lawboxer">
+                            <div className="Lawcharacter">
+                              <div className="Lawhead">
+                                <div className="Lawface">
+                                  <div className="Laweyes"></div>
+                                  <div className="Laweyes2"></div>
                                 </div>
                               </div>
-                              <div class="LawupperBody">
-                                <div class="LawleftArm"></div>
-                                <div class="Lawtorso">
-                                  <div class="heart"></div>
+                              <div className="LawupperBody">
+                                <div className="LawleftArm"></div>
+                                <div className="Lawtorso">
+                                  <div className="heart"></div>
                                 </div>
-                                <div class="LawrightArm"></div>
+                                <div className="LawrightArm"></div>
                               </div>
-                              <div class="LawlowerBody">
-                                <div class="LawleftLeg"></div>
+                              <div className="LawlowerBody">
+                                <div className="LawleftLeg"></div>
                               </div>
                             </div>
                           </div>
@@ -249,25 +274,25 @@ export default function Landing(props) {
                                     <div className="fridgeSoda"></div>
                                   </div>
                                 </div>
-                                <div class="charMovement">
-                                  <div class="largeContainer">
-                                    <div class="boxer">
-                                      <div class="character">
-                                        <div class="head">
-                                          <div class="face">
-                                            <div class="eyes"></div>
-                                            <div class="eyes2"></div>
+                                <div className="charMovement">
+                                  <div className="largeContainer">
+                                    <div className="boxer">
+                                      <div className="character">
+                                        <div className="head">
+                                          <div className="face">
+                                            <div className="eyes"></div>
+                                            <div className="eyes2"></div>
                                           </div>
                                         </div>
-                                        <div class="upperBody">
-                                          <div class="leftArm"></div>
-                                          <div class="torso">
-                                            <div class="heart"></div>
+                                        <div className="upperBody">
+                                          <div className="leftArm"></div>
+                                          <div className="torso">
+                                            <div className="heart"></div>
                                           </div>
-                                          <div class="rightArm"></div>
+                                          <div className="rightArm"></div>
                                         </div>
-                                        <div class="lowerBody">
-                                          <div class="leftLeg"></div>
+                                        <div className="lowerBody">
+                                          <div className="leftLeg"></div>
                                         </div>
                                       </div>
                                     </div>
@@ -277,23 +302,35 @@ export default function Landing(props) {
                               <div className="storeCenterBottom">
                                 <div className="magRow">
                                   <div className="mags">
-                                    {allProjects.map((data) => (
-                                      <div
-                                        className="magazine"
-                                        data-key={data.tag}
-                                        onClick={changeProject}
-                                      >
-                                        {data.tag}
-                                      </div>
-                                    ))}
+                                    {allProjects.map(
+                                      (data) =>
+                                        data.row.includes("1") && (
+                                          <div
+                                            className="magazine"
+                                            data-key={data.tag}
+                                            onClick={changeProject}
+                                          >
+                                            {data.tag}
+                                          </div>
+                                        )
+                                    )}
                                   </div>
                                   <div className="shelf"></div>
                                 </div>
                                 <div className="magRow">
                                   <div className="mags">
-                                    <div className="magazine">?</div>
-                                    <div className="magazine">?</div>
-                                    <div className="magazine">?</div>
+                                    {allProjects.map(
+                                      (data) =>
+                                        data.row.includes("2") && (
+                                          <div
+                                            className="magazine"
+                                            data-key={data.tag}
+                                            onClick={changeProject}
+                                          >
+                                            {data.tag}
+                                          </div>
+                                        )
+                                    )}
                                   </div>
                                   <div className="shelf"></div>
                                 </div>
@@ -341,49 +378,49 @@ export default function Landing(props) {
                         <div className="chatContainer">
                           <div className="chatBubble">{word}</div>
                         </div>
-                        <div class="randomOnecharMovement">
-                          <div class="randomOnelargeContainer">
-                            <div class="Lawboxer">
-                              <div class="Lawcharacter">
-                                <div class="Lawhead">
-                                  <div class="Lawface">
-                                    <div class="Laweyes"></div>
-                                    <div class="Laweyes2"></div>
+                        <div className="randomOnecharMovement">
+                          <div className="randomOnelargeContainer">
+                            <div className="Lawboxer">
+                              <div className="Lawcharacter">
+                                <div className="Lawhead">
+                                  <div className="Lawface">
+                                    <div className="Laweyes"></div>
+                                    <div className="Laweyes2"></div>
                                   </div>
                                 </div>
-                                <div class="LawupperBody">
-                                  <div class="LawleftArm"></div>
-                                  <div class="Lawtorso">
-                                    <div class="heart"></div>
+                                <div className="LawupperBody">
+                                  <div className="LawleftArm"></div>
+                                  <div className="Lawtorso">
+                                    <div className="heart"></div>
                                   </div>
-                                  <div class="LawrightArm"></div>
+                                  <div className="LawrightArm"></div>
                                 </div>
-                                <div class="LawlowerBody">
-                                  <div class="LawleftLeg"></div>
+                                <div className="LawlowerBody">
+                                  <div className="LawleftLeg"></div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="randomTwocharMovement">
-                          <div class="randomTwolargeContainer">
-                            <div class="Lawboxer">
-                              <div class="Lawcharacter">
-                                <div class="Lawhead">
-                                  <div class="Lawface">
-                                    <div class="Laweyes"></div>
-                                    <div class="Laweyes2"></div>
+                        <div className="randomTwocharMovement">
+                          <div className="randomTwolargeContainer">
+                            <div className="Lawboxer">
+                              <div className="Lawcharacter">
+                                <div className="Lawhead">
+                                  <div className="Lawface">
+                                    <div className="Laweyes"></div>
+                                    <div className="Laweyes2"></div>
                                   </div>
                                 </div>
-                                <div class="LawupperBody">
-                                  <div class="LawleftArm"></div>
-                                  <div class="Lawtorso">
-                                    <div class="heart"></div>
+                                <div className="LawupperBody">
+                                  <div className="LawleftArm"></div>
+                                  <div className="Lawtorso">
+                                    <div className="heart"></div>
                                   </div>
-                                  <div class="LawrightArm"></div>
+                                  <div className="LawrightArm"></div>
                                 </div>
-                                <div class="LawlowerBody">
-                                  <div class="LawleftLeg"></div>
+                                <div className="LawlowerBody">
+                                  <div className="LawleftLeg"></div>
                                 </div>
                               </div>
                             </div>
@@ -392,25 +429,25 @@ export default function Landing(props) {
                         <div className="benchContainer">
                           <div className="bench">
                             <div className="lawrenceContainer">
-                              <div class="LawcharMovement">
-                                <div class="LawlargeContainer">
-                                  <div class="Lawboxer">
-                                    <div class="Lawcharacter">
-                                      <div class="Lawhead">
-                                        <div class="Lawface">
-                                          <div class="Laweyes"></div>
-                                          <div class="Laweyes2"></div>
+                              <div className="LawcharMovement">
+                                <div className="LawlargeContainer">
+                                  <div className="Lawboxer">
+                                    <div className="Lawcharacter">
+                                      <div className="Lawhead">
+                                        <div className="Lawface">
+                                          <div className="Laweyes"></div>
+                                          <div className="Laweyes2"></div>
                                         </div>
                                       </div>
-                                      <div class="LawupperBody">
-                                        <div class="LawleftArm"></div>
-                                        <div class="Lawtorso">
-                                          <div class="heart"></div>
+                                      <div className="LawupperBody">
+                                        <div className="LawleftArm"></div>
+                                        <div className="Lawtorso">
+                                          <div className="heart"></div>
                                         </div>
-                                        <div class="LawrightArm"></div>
+                                        <div className="LawrightArm"></div>
                                       </div>
-                                      <div class="LawlowerBody">
-                                        <div class="LawleftLeg"></div>
+                                      <div className="LawlowerBody">
+                                        <div className="LawleftLeg"></div>
                                       </div>
                                     </div>
                                   </div>
@@ -504,21 +541,21 @@ export default function Landing(props) {
                                   href="https://www.linkedin.com/in/lawrenceyee91/"
                                   target="_blank"
                                 >
-                                  <a className="flierText">LinkedIn</a>
+                                  <div className="flierText">LinkedIn</div>
                                 </a>
                                 <a
                                   className="flier"
                                   href="https://github.com/Newbz521"
                                   target="_blank"
                                 >
-                                  <a className="flierText">GitHub</a>
+                                  <div className="flierText">GitHub</div>
                                 </a>
                                 <a
                                   className="flier"
                                   href={Resume}
                                   target="_blank"
                                 >
-                                  <a className="flierText">Resume</a>
+                                  <div className="flierText">Resume</div>
                                 </a>
                               </div>
                               <div className="infoTextRight"></div>
