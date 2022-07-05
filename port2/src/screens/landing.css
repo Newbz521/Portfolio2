@@ -1610,7 +1610,7 @@ header {
     height: 80%;
   }
   .backDrop {
-    background-size: 10%;
+    background-size: 15%;
   }
   .backStation {
     width: calc(60vh / 2);
