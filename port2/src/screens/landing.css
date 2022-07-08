@@ -626,7 +626,7 @@ header {
 }
 .kioskContainer {
   display: flex;
-  height: 100%;
+  height: 70vh;
   width: 40%;
   /* border: 1px solid blue; */
   justify-content: center;
