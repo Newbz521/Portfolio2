@@ -1619,6 +1619,7 @@ header {
   }
   .backDrop {
     background-size: 15%;
+    background-repeat: no-repeat;
   }
   .backStation {
     width: calc(60vh / 2);
