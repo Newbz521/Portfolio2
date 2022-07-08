@@ -247,7 +247,7 @@ header {
 }
 .storeContainer {
   display: flex;
-  height: 100%;
+  height: 70vh;
   width: 50%;
   justify-content: flex-end;
   align-items: center;
@@ -1463,7 +1463,7 @@ header {
 
 .infoContainer {
   display: flex;
-  height: 100%;
+  height: 70vh;
   width: 80%;
   /* border: 1px solid blue; */
   justify-content: center;
