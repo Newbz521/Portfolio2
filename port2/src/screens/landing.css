@@ -730,7 +730,7 @@ header {
 }
 .benchContainer {
   display: flex;
-  height: 40%;
+  height: 70vh;
   width: 40%;
   /* border: 1px solid blue; */
   flex-direction: column;
@@ -740,7 +740,7 @@ header {
 
 .bench {
   display: flex;
-  height: 90%;
+  height: 40%;
   width: 100%;
   /* border: 1px solid brown; */
   flex-direction: row;
@@ -818,6 +818,7 @@ header {
   align-items: center;
   width: 100%;
   z-index: -1;
+  margin-bottom: 60px;
 }
 .largeContainer {
   display: flex;
@@ -984,6 +985,7 @@ header {
   position: absolute;
   transform: scale(0.9);
   z-index: -1;
+  margin-bottom: 20px;
 }
 .randomOnecharMovement {
   right: 5%;
