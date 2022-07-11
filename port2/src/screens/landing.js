@@ -10,6 +10,7 @@ import FUTURAMA from "../files/FUTURAMA.jpeg";
 import GRAPH from "../files/GRAPH.jpeg";
 import Mountain from "./mountain.png";
 import Forrest from "./forrest.png";
+import Portfolio from "../files/portfolio.jpeg";
 import Navbar from "../components/navbar/nav";
 import { render } from "react-dom";
 import { Parallax, Background } from "react-parallax";
@@ -90,6 +91,15 @@ export default function Landing(props) {
       img: FUTURAMA,
       tag: "RAMA",
       project: "project6",
+      row: "2",
+    },
+    {
+      name: "Portfolio",
+      git: "https://github.com/Newbz521/Portfolio",
+      url: "https://lawrenceyee.netlify.app/",
+      img: Portfolio,
+      tag: "PORT",
+      project: "project7",
       row: "2",
     },
   ];
