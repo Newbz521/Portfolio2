@@ -718,7 +718,8 @@ header {
   display: flex;
   padding: 5px;
   background-color: grey;
-  font-size: 12px;
+  font-size: 18px;
+  margin: 5px;
   color: grey;
   width: 90%;
   height: 80%;
