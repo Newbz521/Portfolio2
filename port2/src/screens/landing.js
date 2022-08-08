@@ -60,7 +60,7 @@ export default function Landing(props) {
     {
       name: "Places",
       git: "https://github.com/Newbz521/Places-API-Reac-Front-End",
-      url: "https://vermillion-toffee-d0faa8.netlify.app/",
+      url: "https://travelpoints.netlify.app",
       img: Maps,
       tag: "Places",
       project: "project3",
