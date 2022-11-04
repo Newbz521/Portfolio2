@@ -65,6 +65,7 @@ header {
   flex-direction: row;
   /* background-repeat: no-repeat; */
   background-size: 300px 200px;
+  filter:blur(2px);
 }
 .backStation {
   display: flex;
@@ -141,7 +142,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale(0.8) blur(3.5px);
+  filter: grayscale(0.8) blur(5px);
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; */
@@ -559,6 +560,7 @@ header {
   z-index: 2;
   align-items: flex-end;
   overflow: hidden;
+  filter:blur(2.5px);
 }
 
 .train {
@@ -623,6 +625,7 @@ header {
   /* border: 1px solid blue; */
   justify-content: space-between;
   align-items: flex-end;
+  
 }
 .kioskContainer {
   display: flex;
@@ -982,7 +985,7 @@ header {
 .randomTwocharMovement,
 .randomOnecharMovement {
   opacity: 0.7;
-  filter: grayscale(1) brightness(0.2);
+  filter: grayscale(1) brightness(0.2) blur(3px);
   position: absolute;
   transform: scale(0.9);
   z-index: -1;
@@ -1623,6 +1626,7 @@ header {
   }
   .backDrop {
     background-size: 15%;
+    
   }
   .backStation {
     width: calc(60vh / 2);
