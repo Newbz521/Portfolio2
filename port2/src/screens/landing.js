@@ -6,6 +6,8 @@ import DDR from "../files/DDR.jpeg";
 import Inner from "../files/inner.jpeg";
 import Maps from "../files/maps.jpeg";
 import Hater from "../files/Hater.jpeg";
+import Bubble from "../files/bubble.png";
+import Marble from "../files/marble.png"
 import FUTURAMA from "../files/FUTURAMA.jpeg";
 import GRAPH from "../files/GRAPH.jpeg";
 import Mountain from "./mountain.png";
@@ -40,6 +42,24 @@ export default function Landing(props) {
 
   const allProjects = [
     {
+      name: "Bubble Frenzy",
+      git: "https://github.com/Newbz521/Beacon-Defender-",
+      url: "https://newbz521.github.io/Beacon-Defender-/",
+      img: Bubble,
+      tag: "Bubble",
+      project: "project1",
+      row: "1",
+    },
+    {
+      name: "The Marbler",
+      git: "https://github.com/Newbz521/Game-test",
+      url: "https://newbz521.github.io/Game-test/",
+      img: Marble,
+      tag: "Marble",
+      project: "project1",
+      row: "1",
+    },
+    {
       name: "Hater",
       git: "https://github.com/Newbz521/hater",
       url: "https://haterip.netlify.app/",
@@ -57,15 +77,15 @@ export default function Landing(props) {
       project: "project2",
       row: "1",
     },
-    {
-      name: "Places",
-      git: "https://github.com/Newbz521/Places-API-Reac-Front-End",
-      url: "https://travelpoints.netlify.app",
-      img: Maps,
-      tag: "Places",
-      project: "project3",
-      row: "1",
-    },
+    // {
+    //   name: "Places",
+    //   git: "https://github.com/Newbz521/Places-API-Reac-Front-End",
+    //   url: "https://travelpoints.netlify.app",
+    //   img: Maps,
+    //   tag: "Places",
+    //   project: "project3",
+    //   row: "1",
+    // },
     {
       name: "DDR",
       git: "https://github.com/Newbz521/DDR",
@@ -73,17 +93,17 @@ export default function Landing(props) {
       img: DDR,
       tag: "DDR",
       project: "project4",
-      row: "1",
-    },
-    {
-      name: "GRAPH",
-      git: "https://github.com/Newbz521/React-Graph-Component",
-      url: "https://graphcomponent.netlify.app/",
-      img: GRAPH,
-      tag: "GRAPH",
-      project: "project5",
       row: "2",
     },
+    // {
+    //   name: "GRAPH",
+    //   git: "https://github.com/Newbz521/React-Graph-Component",
+    //   url: "https://graphcomponent.netlify.app/",
+    //   img: GRAPH,
+    //   tag: "GRAPH",
+    //   project: "project5",
+    //   row: "2",
+    // },
     {
       name: "FUTURAMA",
       git: "https://github.com/Newbz521/React-Graph-Component",
@@ -91,15 +111,6 @@ export default function Landing(props) {
       img: FUTURAMA,
       tag: "RAMA",
       project: "project6",
-      row: "2",
-    },
-    {
-      name: "Portfolio",
-      git: "https://github.com/Newbz521/Portfolio",
-      url: "https://lawrenceyee.netlify.app/",
-      img: Portfolio,
-      tag: "PORT",
-      project: "project7",
       row: "2",
     },
   ];
