@@ -75,7 +75,7 @@ export default function Landing(props) {
       img: Inner,
       tag: "Inner",
       project: "project2",
-      row: "1",
+      row: "2",
     },
     // {
     //   name: "Places",
