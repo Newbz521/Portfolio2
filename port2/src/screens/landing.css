@@ -574,28 +574,29 @@ header {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2%;
+  
   animation: moving 10s linear infinite;
-  right: -300%;
+  /* right: -300%; */
   overflow: hidden;
 }
 @keyframes moving {
   0% {
-    right: -300%;
+    transform: translateX(-300%);
   }
   20% {
-    right: -100%;
+    transform: translateX(-100%);
   }
   40% {
-    right: 0;
+    transform: translateX(0);
   }
   60% {
-    right: 0;
+   transform: translateX(0);
   }
   80% {
-    right: 100%;
+   transform: translateX(100%);
   }
   100% {
-    right: 300%;
+    transform: translateX(300%);
   }
 }
 
@@ -1001,24 +1002,29 @@ header {
 }
 @keyframes randomMoveOne {
   0% {
-    right: 5%;
+    transform: translateX(5%);
   }
   50% {
-    right: 90%;
+    transform: translateX(90%);
+    /* right: 90%; */
   }
   100% {
-    right: 5%;
+    transform: translateX(5%);
+    /* right: 5%; */
   }
 }
 @keyframes randomMoveTwo {
   0% {
-    left: 5%;
+    transform: translateX(5%);
+    /* left: 5%; */
   }
   50% {
-    left: 90%;
+    transform: translateX(90%);
+    /* left: 90%; */
   }
   100% {
-    left: 5%;
+    transform: translateX(5%);
+    /* left: 5%; */
   }
 }
 .LawcharMovement {
