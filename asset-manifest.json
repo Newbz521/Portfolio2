@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7d36fc50.css",
+    "main.js": "/static/js/main.d95dc606.js",
+    "static/js/787.ad129229.chunk.js": "/static/js/787.ad129229.chunk.js",
+    "static/media/mountain.png": "/static/media/mountain.24ba1eff7f7b6e6186cd.png",
+    "static/media/forrest.png": "/static/media/forrest.d5a80dc831fd9a295a95.png",
+    "static/media/FUTURAMA.jpeg": "/static/media/FUTURAMA.4362c6120143d6d74e6e.jpeg",
+    "static/media/maps.jpeg": "/static/media/maps.cdeeabe04f42a99eef6b.jpeg",
+    "static/media/GRAPH.jpeg": "/static/media/GRAPH.533e7f90fa399bb3344f.jpeg",
+    "static/media/tiles.jpg": "/static/media/tiles.39df55315a8283994feb.jpg",
+    "static/media/inner.jpeg": "/static/media/inner.427f83cbac269726e77c.jpeg",
+    "static/media/DDR.jpeg": "/static/media/DDR.6a4ee192586ec433c670.jpeg",
+    "static/media/portfolio.jpeg": "/static/media/portfolio.e93d6005d90471276eb4.jpeg",
+    "static/media/Resume.pdf": "/static/media/Resume.119d5d22bb2525aab0d4.pdf",
+    "static/media/Hater.jpeg": "/static/media/Hater.0af2476025a86b6b3624.jpeg",
+    "static/media/bench.png": "/static/media/bench.d3534eec98d6cbb820a0.png",
+    "index.html": "/index.html",
+    "main.7d36fc50.css.map": "/static/css/main.7d36fc50.css.map",
+    "main.d95dc606.js.map": "/static/js/main.d95dc606.js.map",
+    "787.ad129229.chunk.js.map": "/static/js/787.ad129229.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d36fc50.css",
+    "static/js/main.d95dc606.js"
+  ]
+}
