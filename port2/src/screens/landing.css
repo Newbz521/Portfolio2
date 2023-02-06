@@ -1584,6 +1584,10 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+  .lampContainer{
+    width: fit-content;
+    /* z-index: ; */
+  }
   .store {
     width: 90%;
     height: 80%;
@@ -1635,7 +1639,8 @@ header {
     
   }
   .backStation {
+    display: none;
     width: calc(60vh / 2);
-    height: 60vh;
+    height: 55vh;
   }
 }
