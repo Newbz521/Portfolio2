@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import "./nav.css";
 import Resume from "../../files/Resume.pdf";
 import { SiHomeadvisor, SiCodesandbox } from "react-icons/si";
-import { BiUser } from "react-icons/bi";
+import {RiContactsLine} from "react-icons/ri"
+import { CgProfile } from "react-icons/cg";
 import { MdOutlineFileDownload } from "react-icons/md";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -23,12 +24,12 @@ function Nav(props) {
         </li>
         <li onClick={props.clickAboutMe} className="navLink">
           <div className="icon selected">
-            <SiHomeadvisor />
+            <CgProfile />
           </div>
         </li>
         <li onClick={props.clickContact} className="navLink">
           <div className="icon selected">
-            <BiUser />
+            <RiContactsLine />
           </div>
         </li>
       </div>

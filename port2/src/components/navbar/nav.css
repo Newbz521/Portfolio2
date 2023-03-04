@@ -6,8 +6,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  background: #5db8b9;
+  position:fixed;
+  background: #77e7e9;
   /* position: sticky; */
   top: 0;
   /* left: 0; */
@@ -36,11 +36,12 @@
 
   text-align: center;
   font-size: 25px;
+  border: 2px solid rgb(248, 248, 142, 0);
 }
 .icon:hover {
   cursor: pointer;
-  color: rgb(246, 207, 214);
-  border: 1px solid rgb(246, 207, 214);
+  color: rgb(248, 248, 142);
+  border: 2px solid rgb(248, 248, 142);
   border-radius: 10px;
   transition-duration: 0.75s;
 }
@@ -57,4 +58,15 @@
   text-align: center;
   /* overflow: hidden; */
   /* transition: 0.5s ease; */
+}
+
+
+@media only screen and (max-width: 600px) {
+/* 
+.navContainer{
+  width: calc(100vw);
+  top: 0;
+  left: 0;
+} */
+
 }

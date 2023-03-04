@@ -524,7 +524,7 @@ export default function Landing(props) {
                       </div>
                       <div className="kioskContainer">
                         <div className="stationSignContainer">
-                          About Me Street
+                          Lawrence Yee Street
                         </div>
                         <div className="kiosk">
                           <div className="kioskLeft"></div>

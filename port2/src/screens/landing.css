@@ -4,7 +4,7 @@
   height: 100vh;
   /* max-height: -webkit-fill-available; */
   overflow-x: scroll;
-  overflow-y: scroll;
+  overflow-y: none;
 }
 .overallContainer {
   display: flex;
@@ -18,7 +18,7 @@
   overflow-y: hidden;
   /* border: 2px solid blue; */
   overflow-x: hidden;
-  background: #84fdff;
+  background: #c9aef3;
   /* filter: brightness(1.2); */
 }
 .contentContainer {
