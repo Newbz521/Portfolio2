@@ -1,0 +1,59 @@
+.cover-container{
+  display: flex;
+  position: absolute;
+  height: calc(100vh - 50px);
+  width: 100vw;
+  background-color: rgb(250, 232, 211);
+  z-index: 2;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0);
+  transition: height .5s ease;
+  overflow: hidden;
+  transform-origin: 0 0;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.cover-container > :first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 70vh;
+  /* border: 10px solid white; */
+  border-radius: 2vh;
+  color: grey;
+  font-size: 25px;
+  flex-direction: column;
+  cursor: pointer;
+}
+.enter-button:hover .metro-card{
+  bottom: 40vh;
+}
+.metro-card{
+  display: flex;
+  width: 28.32vh;
+  height: 17.92vh;
+  /* border: 5px solid white; */
+  position: absolute;
+  bottom: 42vh;
+  background-size: cover;
+  background-position: center;
+  transition:all .75s;
+  background-image: url("./MetroCard_no_bg.png");
+  transform: translateX(120%);
+}
+.metro-slot{
+  display: flex;
+  position: absolute;
+  bottom: 40vh;
+  height: 6vh;
+  width: 35vh;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background:linear-gradient(to bottom, rgb(255, 255, 255), rgb(162, 162, 162), rgb(148, 148, 148), grey);
+  border-radius: 0 2vh 0 0;
+  color: white;
+}
