@@ -1,7 +1,7 @@
 .bigWrap {
   display: inline-block;
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   /* max-height: -webkit-fill-available; */
   overflow-x: scroll;
   overflow-y: none;
@@ -63,7 +63,7 @@ header {
 }
 .backDrop {
   width: 100%;
-  height: 100vh;
+  height: 100svh;
   position: absolute;
   display: flex;
 

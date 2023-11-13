@@ -6,6 +6,7 @@ import DDR from "../files/DDR.jpeg";
 import Inner from "../files/inner.jpeg";
 import Maps from "../files/maps.jpeg";
 import Hater from "../files/Hater.jpeg";
+import ezML from "../files/ezML.png"
 import Bubble from "../files/bubble.png";
 import Marble from "../files/marble.png"
 import FUTURAMA from "../files/FUTURAMA.jpeg";
@@ -42,13 +43,22 @@ export default function Landing(props) {
 
   const allProjects = [
     {
+      name: "ezML",
+      git: "",
+      url: "https://ezml.io/",
+      img: ezML,
+      tag: "ezML",
+      project: "project1",
+      row: "1",
+    },
+    {
       name: "Bubble Frenzy",
       git: "https://github.com/Newbz521/Beacon-Defender-",
       url: "https://newbz521.github.io/Beacon-Defender-/",
       img: Bubble,
       tag: "Bubble",
       project: "project1",
-      row: "1",
+      row: "2",
     },
     {
       name: "The Marbler",
@@ -57,26 +67,9 @@ export default function Landing(props) {
       img: Marble,
       tag: "Marble",
       project: "project1",
-      row: "1",
-    },
-    {
-      name: "Hater",
-      git: "https://github.com/Newbz521/hater",
-      url: "https://haterip.netlify.app/",
-      img: Hater,
-      tag: "Hater",
-      project: "project1",
-      row: "1",
-    },
-    {
-      name: "Inner Bod",
-      git: "https://github.com/Newbz521/TheInnerBod",
-      url: "https://theinnerbod.netlify.app/",
-      img: Inner,
-      tag: "Inner",
-      project: "project2",
       row: "2",
     },
+
     // {
     //   name: "Places",
     //   git: "https://github.com/Newbz521/Places-API-Reac-Front-End",
@@ -104,15 +97,7 @@ export default function Landing(props) {
     //   project: "project5",
     //   row: "2",
     // },
-    {
-      name: "FUTURAMA",
-      git: "https://github.com/Newbz521/React-Graph-Component",
-      url: "https://futurama-react.netlify.app/",
-      img: FUTURAMA,
-      tag: "RAMA",
-      project: "project6",
-      row: "2",
-    },
+
   ];
   const size = 2;
   const firstHalfProjects = allProjects.slice(0, size);
