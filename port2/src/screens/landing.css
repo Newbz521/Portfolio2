@@ -765,7 +765,7 @@ header {
   position: absolute;
   /* height:fit-content; */
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: -10vh;
   z-index: 20;
   transform: translateX(-35vw);
 }
@@ -1611,9 +1611,7 @@ header {
   .benchContainer{
     height: 100%;
   }
-  .bench{
-    height: 40%;
-  }
+
   .lampContainer{
     width: fit-content;
     /* z-index: ; */
@@ -1656,9 +1654,8 @@ header {
     width: 90%;
   }
   .chatContainer {
-    left: 5%;
-    bottom: 60%;
-    width: 40vw;
+ 
+    width: 50vw;
   }
   .kiosk {
     width: 70%;
