@@ -493,7 +493,7 @@ export default function Landing(props) {
                           </div>
                         </div>
                       </div>
-                      <div className="poleMid">
+                      {/* <div className="poleMid">
                         <div className="stationName">
                           <div className="stationNameBorder">
                             New York
@@ -506,11 +506,11 @@ export default function Landing(props) {
                         <div className="poleThick"></div>
                         <div className="poleCenter"></div>
                         <div className="poleThick"></div>
-                      </div>
-                      <div className="kioskContainer">
+                      </div> */}
                         <div className="stationSignContainer">
                           Lawrence Yee Street
                         </div>
+                      <div className="kioskContainer">
                         <div className="kiosk">
                           <div className="kioskLeft"></div>
                           <div className="kioskMiddle">
