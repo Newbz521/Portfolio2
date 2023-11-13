@@ -462,6 +462,7 @@ export default function Landing(props) {
                             </div>
                           </div>
                         </div>
+                        
                         <div className="benchContainer">
                           <div className="bench">
                             <div className="lawrenceContainer">
@@ -492,7 +493,8 @@ export default function Landing(props) {
                             </div>
                           </div>
                         </div>
-                      </div>
+
+                    </div>
                       {/* <div className="poleMid">
                         <div className="stationName">
                           <div className="stationNameBorder">

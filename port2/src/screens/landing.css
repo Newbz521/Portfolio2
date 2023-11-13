@@ -10,7 +10,7 @@
   display: flex;
   height: calc(100%);
     /* max-height: -webkit-fill-available; */
-  width: 300%;
+  width: 300vw;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -371,7 +371,7 @@ header {
   position: absolute;
   align-items: center;
   justify-content: center;
-  top: 1%;
+  top: 3svh;
   height: 5%;
   width: fit-content;
   background-color: rgb(24, 23, 23);
@@ -385,6 +385,7 @@ header {
   text-decoration: underline overline;
   text-align: center;
   box-shadow: 0 0 5px 2px rgb(24, 23, 23);
+  
 }
 
 .store {
@@ -769,10 +770,11 @@ header {
   flex-direction: row;
   align-items: flex-end;
   justify-content: center;
-  background: url("./bench.png");
+  /* background: url("./bench.png");
   background-size: 90% 90%;
   background-position: bottom;
   background-repeat: no-repeat;
+  border:1px solid blue; */
   /* filter: brightness(1); */
 }
 .lawrenceContainer {
@@ -1638,10 +1640,10 @@ header {
     width: 90%;
   }
   .contentContainer{
-    width:90%;
+    width:100%;
   }
   .overallContainer {
-    width: 400%;
+    width: 450%;
   }
   .landingContainer2 {
     width: 200%;
