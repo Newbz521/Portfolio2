@@ -464,7 +464,6 @@ export default function Landing(props) {
                         </div>
                         
                         <div className="benchContainer">
-                          <div className="bench">
                             <div className="lawrenceContainer">
                               <div className="LawcharMovement">
                                 <div className="LawlargeContainer">
@@ -492,7 +491,7 @@ export default function Landing(props) {
                               </div>
                             </div>
                           </div>
-                        </div>
+                    
 
                     </div>
                       {/* <div className="poleMid">
