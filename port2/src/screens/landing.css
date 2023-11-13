@@ -1,7 +1,7 @@
 .bigWrap {
   display: inline-block;
   width: 100%;
-  height: 100dvh;
+  height: 100svh;
   /* max-height: -webkit-fill-available; */
   overflow-x: scroll;
   overflow-y: none;
@@ -63,7 +63,7 @@ header {
 }
 .backDrop {
   width: 100%;
-  height: 100dvh;
+  height: 100svh;
   position: absolute;
   display: flex;
 
@@ -88,8 +88,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(60dvh / 2);
-  height: 60dvh;
+  width: calc(60svh / 2);
+  height: 60svh;
   /* border: 4px solid white; */
   overflow: hidden;
   border-radius: 100px 100px 0 0;
@@ -169,7 +169,7 @@ header {
 .landingContainer3 {
   position: relative;
   display: flex;
-  height: 100dvh;
+  height: 100svh;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -265,7 +265,7 @@ header {
 }
 .storeContainer {
   display: flex;
-  height: 70dvh;
+  height: 70svh;
   width: 50%;
   justify-content: flex-end;
   align-items: center;
@@ -522,8 +522,8 @@ header {
 }
 .magazine {
   display: flex;
-  height: 7.5dvh;
-  width: calc(7.5dvh / 1.3);
+  height: 7.5svh;
+  width: calc(7.5svh / 1.3);
   background-color: rgb(250, 53, 53);
   color: white;
   justify-content: center;
@@ -648,7 +648,7 @@ header {
 }
 .kioskContainer {
   display: flex;
-  height: 70dvh;
+  height: 70svh;
   width: 40%;
   /* border: 1px solid blue; */
   justify-content: center;
@@ -753,7 +753,7 @@ header {
 }
 .benchContainer {
   display: flex;
-  height: 70dvh;
+  height: 70svh;
   width: 40%;
   /* border: 1px solid blue; */
   flex-direction: column;
@@ -1493,7 +1493,7 @@ header {
 
 .infoContainer {
   display: flex;
-  height: 70dvh;
+  height: 70svh;
   width: 80%;
   /* border: 1px solid blue; */
   justify-content: center;
@@ -1582,8 +1582,8 @@ header {
 }
 .flier {
   display: flex;
-  width: calc(12dvh / 1.3);
-  height: 12dvh;
+  width: calc(12svh / 1.3);
+  height: 12svh;
   margin-top: 5%;
 
   justify-content: center;
@@ -1637,6 +1637,9 @@ header {
   .infoContainer {
     width: 90%;
   }
+  .contentContainer{
+    width:90%;
+  }
   .overallContainer {
     width: 400%;
   }
@@ -1664,7 +1667,7 @@ header {
   }
   .backStation {
     display: none;
-    width: calc(60dvh / 2);
-    height: 55dvh;
+    width: calc(60svh / 2);
+    height: 55svh;
   }
 }
