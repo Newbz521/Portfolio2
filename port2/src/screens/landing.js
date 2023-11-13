@@ -226,6 +226,10 @@ export default function Landing(props) {
                   <div className="stationSignContainer" style={{right: "10vw", top: "2vh"}}>
                           Contacts BLVD.
                   </div>
+
+                
+
+                  
                   <div
                     className="landingContainer1"
                     id="section1"
@@ -419,9 +423,7 @@ export default function Landing(props) {
                         </div>
                       </div>
                       <div className="middleContainer">
-                        <div className="chatContainer">
-                          <div className="chatBubble">{word}</div>
-                        </div>
+                   
                         <div className="randomOnecharMovement">
                           <div className="randomOnelargeContainer">
                             <div className="Lawboxer">
@@ -471,8 +473,34 @@ export default function Landing(props) {
                           </div>
                         </div>
                         
-                        <div className="benchContainer">
-                            <div className="lawrenceContainer">
+                      
+                    
+
+                    </div>
+                      {/* <div className="poleMid">
+                        <div className="stationName">
+                          <div className="stationNameBorder">
+                            New York
+                            <div className="trainNameContainer">
+                              <div className="trainCircle">D</div>
+                              <div className="trainCircle">B</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="poleThick"></div>
+                        <div className="poleCenter"></div>
+                        <div className="poleThick"></div>
+                      </div> */}
+                        {/* <div className="stationSignContainer">
+                          Lawrence Yee Street
+                        </div> */}
+                      
+
+                      <div className="benchContainer">
+                        <div className="chatContainer">
+                          <div className="chatBubble">{word}</div>
+                        </div>
+                        <div className="lawrenceContainer">
                               <div className="LawcharMovement">
                                 <div className="LawlargeContainer">
                                   <div className="Lawboxer">
@@ -497,28 +525,8 @@ export default function Landing(props) {
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                    
-
-                    </div>
-                      {/* <div className="poleMid">
-                        <div className="stationName">
-                          <div className="stationNameBorder">
-                            New York
-                            <div className="trainNameContainer">
-                              <div className="trainCircle">D</div>
-                              <div className="trainCircle">B</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="poleThick"></div>
-                        <div className="poleCenter"></div>
-                        <div className="poleThick"></div>
-                      </div> */}
-                        {/* <div className="stationSignContainer">
-                          Lawrence Yee Street
-                        </div> */}
+                     </div>  
+                  </div>
                       <div className="kioskContainer">
                         <div className="kiosk">
                           <div className="kioskLeft"></div>
