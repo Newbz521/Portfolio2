@@ -157,6 +157,7 @@ export default function Landing(props) {
 
         <div className="overallContainer">
           <div className="contentContainer">
+          
             <div className="wrapper">
               <header>
                 <div className="backDrop">
@@ -216,6 +217,15 @@ export default function Landing(props) {
                 </div>
 
                 <>
+                  <div className="stationSignContainer" style={{ top: "2vh",left: "10vw" }}>
+                          Projects Ave.
+                  </div>
+                  <div className="stationSignContainer" style={{top:"2vh",}}>
+                          Lawrence Street.
+                  </div>
+                  <div className="stationSignContainer" style={{right: "10vw", top: "2vh"}}>
+                          Contacts BLVD.
+                  </div>
                   <div
                     className="landingContainer1"
                     id="section1"
@@ -293,9 +303,7 @@ export default function Landing(props) {
                           <div className="lamp"></div>
                           <div className="lamp2"></div>
                         </div>
-                        <div className="stationSignContainer">
-                          Projects Ave.
-                        </div>
+                      
                         <div className="store">
                           <div className="storeTop">
                             <div className="storeName">NEWSSTAND</div>
@@ -508,9 +516,9 @@ export default function Landing(props) {
                         <div className="poleCenter"></div>
                         <div className="poleThick"></div>
                       </div> */}
-                        <div className="stationSignContainer">
+                        {/* <div className="stationSignContainer">
                           Lawrence Yee Street
-                        </div>
+                        </div> */}
                       <div className="kioskContainer">
                         <div className="kiosk">
                           <div className="kioskLeft"></div>
@@ -567,7 +575,7 @@ export default function Landing(props) {
                         </div>
                       </div>
                       <div className="infoContainer">
-                        <div className="stationSignContainer">Contact Blvd</div>
+                        {/* <div className="stationSignContainer">Contact Blvd</div> */}
                         <div className="info">
                           <div className="infoLeft"></div>
                           <div className="infoMiddle">
