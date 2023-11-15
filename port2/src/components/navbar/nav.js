@@ -44,7 +44,17 @@ function Nav(props) {
             </span>
           </div>
         </li>
+        
       </div>
+      <a  href={"https://law521.netlify.app"} target="_blank" className="navLink pc-link" style={{position:"absolute", right:0, marginRight:"20px" }}>
+          <div className="icon selected">
+            {/* <RiContactsLine /> */}
+            <span className="link-name">
+
+            3D Portfolio
+            </span>
+          </div>
+        </a>
     </nav>
   );
 }

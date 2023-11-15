@@ -59,8 +59,10 @@
   /* transition: 0.5s ease; */
 }
 
-
 @media only screen and (max-width: 600px) {
+  .pc-link{
+    display:none;
+  }
 /* 
 .navContainer{
   width: calc(100vw);
