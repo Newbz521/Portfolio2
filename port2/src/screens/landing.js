@@ -217,13 +217,13 @@ export default function Landing(props) {
                 </div>
 
                 <>
-                  <div className="stationSignContainer" style={{ top: "2vh",left: "10vw" }}>
+                  <div className="stationSignContainer" style={{ top: "2vh",left: "50vw", transform:"translateX(-50%)" }}>
                           Projects Ave.
                   </div>
                   <div className="stationSignContainer" style={{top:"2vh",}}>
                           Lawrence Street.
                   </div>
-                  <div className="stationSignContainer" style={{right: "10vw", top: "2vh"}}>
+                  <div className="stationSignContainer" style={{right: "50vw", top: "2vh", transform:"translateX(50%)"}}>
                           Contacts BLVD.
                   </div>
 
