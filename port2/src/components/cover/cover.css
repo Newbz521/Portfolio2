@@ -2,13 +2,13 @@
 .cover-container{
   display: flex;
   position: absolute;
-  height: calc(100svh - 50px);
+  height: calc(100svh );
   width: 100svw;
   /* background-color: #4bffa5; */
   /* background: linear-gradient(90deg, rgb(27, 235, 253) , rgba(72,35,124,1) ); */
   /* background-image: url("https://gotourismguides.com/nyc/wp-content/uploads/mta-subway-map.jpg"); */
   /* opacity: .2; */
-  z-index: 2;
+  z-index: 30;
   bottom: 0;
   justify-content: center;
   align-items: center;
