@@ -11,34 +11,47 @@ function Nav(props) {
   const [bg, setBg] = useState("");
   const [slide, setSlide] = useState({ transform: "translateX(120%)" })
   const [shift, setShift] = useState({ transform: "translateY(0)" })
+  const [stay,setStay] = useState({transform: "translateY(0)"})
   
   function open() {
     setSlide({ transform: "translateX(-120%)" })
-    setInterval(function () { setShift({ height: "0", "transform-origin": "0 0"  });
-    }, 1000)
+    // setStay({ transform: "translateY(100%)" })
+    setInterval(function () {setStay({ transform: "translateX(-100%)" });
+  }, 1000)
+    setInterval(function () { setShift({ transform:"translateX(100%)"  });
+  }, 1000)
+    // setInterval(function () { setShift({ height: "0", "transform-origin": "0 0"  });
+    // }, 1000)
     // setInterval(function () { setShift({ display: "none", height: "0"})
     // }, 3000)
   }
 
   return (
-    <div className="cover-container" style={shift}>
-      <div onClick={open} className="enter-button">
-        <div className="metro-card" style={slide}></div>
-        <div className="metro-slot">Swipe to Enter</div>
+ 
+    <div className="cover-container" >
+      <div className="cover-hidden" style={shift}> 
+      <div className="station-tag-wrap" style={stay}>
+        <div style={{height:"100%", width:"50%"}}>
+          half
+        </div>
+        <div style={{ height: "100%", width: "50%", display: "flex", justifyContent: "center", alignItems: "flex-start", flexDirection: "column" }}>
+        <div className="name-description" style={{fontSize:"2svh"}}>-Hello there!</div>
+
+          <div className="name-description">I'm 
+            <span className="name-title"> Lawrence</span> Yee
+          
+          </div>
+          <div className="name-description" style={{fontSize:"2svh"}}>I am a Software Engineer | Architecture Designer</div>
+          <div className="name-description" style={{fontSize:"2svh"}}>Passion for turning designs into reality</div>
+          <div onClick={open} className="enter-button">
+            Enter Site
+          </div>
+          
+        </div>
+
       </div>
-      <div className="station-tag-wrap">
-        <div className="station-bottom-line"></div>
-        <div className="station-tag"><div className="line-tag"></div><div className="red-stop">Next Stop</div><div className="tag-name next-stop">Lawrence Station</div></div>
-        <div className="station-tag"><div className="line-tag"></div><div className="tag-name">Nutrition</div></div>
-        <div className="station-tag"><div className="line-tag"></div><div className="tag-name">Physical Therapy</div></div>
-        <div className="station-tag"><div className="line-tag"></div><div className="tag-name">Architecture</div></div>
-        <div className="station-tag"><div className="line-tag"></div><div className="tag-name">Software Engineer</div></div>
       </div>
-      {/* <div className="window-wrap">
-        <div className="window-section"></div>
-        </div> */}
-        {/* <div className="nyc-bg"> Welcome to New York City!</div> */}
-  </div>
+      </div>
   );
 }
 

@@ -1,9 +1,22 @@
+.cover-hidden{
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  height: calc(100svh - 50px);
+  width: 100svw;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 1s ease;
+}
 .cover-container{
   display: flex;
   position: absolute;
-  height: calc(100vh - 50px);
-  width: 100vw;
-  background-color: rgb(250, 232, 211);
+  height: calc(100svh - 50px);
+  width: 100svw;
+  /* background-color: #4bffa5; */
+  /* background: linear-gradient(90deg, rgb(27, 235, 253) , rgba(72,35,124,1) ); */
   /* background-image: url("https://gotourismguides.com/nyc/wp-content/uploads/mta-subway-map.jpg"); */
   /* opacity: .2; */
   z-index: 2;
@@ -11,19 +24,18 @@
   justify-content: center;
   align-items: center;
   transform: translateY(0);
-  transition: height .5s ease;
+  /* transition: all 1s ease; */
   overflow: hidden;
   transform-origin: 0 0;
   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
 }
-
+/* 
 .cover-container > :first-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
-  width: 70vh;
-  /* border: 10px solid white; */
+  height: 20svh;
+  width: 70svh;
   border-radius: 2vh;
   color: grey;
   font-size: 25px;
@@ -31,145 +43,64 @@
   cursor: pointer;
   position: absolute;
   bottom: 0;
-}
-.enter-button:hover .metro-card{
-  bottom: 10vh;
-}
-.metro-card{
-  display: flex;
-  width: 28.32vh;
-  height: 17.92vh;
-  /* border: 5px solid white; */
-  position: absolute;
-  bottom: 12vh;
-  background-size: cover;
-  background-position: center;
-  transition:all .75s;
-  background-image: url("./MetroCard_no_bg.png");
-  transform: translateX(120%);
-}
-.metro-slot{
+} */
+.enter-button{
+  transition: all .25s;
   display: flex;
   position: absolute;
-  bottom: 10vh;
-  height: 6vh;
-  width: 35vh;
+  bottom: 10svh;
+  height: 6svh;
+  width: 35svh;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
-  background:linear-gradient(to bottom, rgb(255, 255, 255), rgb(162, 162, 162), rgb(148, 148, 148), grey);
-  border-radius: 0 2vh 0 0;
-  color: white;
+  border: 5px solid #fc033d;
+  background-color: #edf1fd;
+  border-radius: 30px;
+  color: #6f7491;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.enter-button:hover {
+ background-color: #6f7491;
+ color: #edf1fd;
+ cursor: pointer;
+ 
 }
 
-.window-wrap{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border: 5px solid white;
-  border-radius:5vh;
-  height: 40vh;
-  position:absolute;
-  width: 50vw;
-  top: 20vh;
-  flex-direction: column;
 
-    overflow: hidden;
+
+.name-title{
+  color: #fc033d;
+  font-size: 7svh;
+  /* font-weight: bolder; */
+  font-family: 'Anton', sans-serif;
+  letter-spacing: .2svh;
 }
-.window-section{
-  background-size: 300px 200px;
-  filter:blur(1px);
-  height: 70%;
-  width: 600vw;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.9),
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.9)
-    ),
-    url("./tiles.jpg") repeat-x;
-    animation: slide 4s linear infinite;
+.name-description{
+  color: #6f7491;
+  font-size: 7svh;
+  /* font-weight: bolder; */
+  font-family: 'Anton', sans-serif;
 }
-@keyframes slide {
-  0% {
-    transform: translate(0);
-  }
-  100% {
-    transform: translate(-3840px); /* The image width */
-  }
-}
+
+
 .station-tag-wrap{
   display: flex;
   position:absolute;
-  top: 5vh;
-  height: 19vh;
-  width: 50vw;
+  /* top: 5vh; */
+  height: 100%;
+  width: 100%;
   flex-direction: row;
-  border:2px solid white;
-  background-color: black;
+  /* border:2px solid white; */
+  background-color: #edf1fd;
   align-items: center;
   justify-content: center;
+
   gap: -10vh;
+  transition: all 1s ease;
 }
-.line-tag{
-  height:0;
-  width: 2vh;
-  border: 2px solid white;
-  position:absolute;
-}
-.tag-name{
-  position: absolute;
-  left: 3vh;
-  width: fit-content;
-}
-.station-tag{
-  display: flex;
-  /* border: 1px solid white; */
-  height: 4vh;
-  width: 10vh;
-  align-items: center;
-  transform:rotateZ(-35deg);
-  font-size: 15px;
-  color: orange;
-  font-family: 'Subway Ticker', sans-serif;
-  /* text-shadow: 0 5px 5px white; */
-  /* font-weight: bold; */
-  justify-content: flex-start;
-  gap: 1vh;
-  align-items: center;
-  overflow-x: visible;
-}
-.red-stop{
-  color: red;
-  position: absolute;
-  top: -90%;
-  right: -20%;
-  font-size: 20px;
-  flex-wrap: nowrap;
-  width: 15vh;
-  /* border: 1px solid red; */
-}
-.next-stop{
-  border: 2px dotted red;
-}
-.nyc-bg{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("https://gotourismguides.com/nyc/wp-content/uploads/mta-subway-map.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 18vw;
-  color: rgb(221, 218, 218);
-  font-size: 25px;
-  height: 35vh;
-  border: 4px solid white;
-  border-radius: 1vh;
-  position: absolute;
-  top: calc(20% );
-  left: 2vw;
-}
+
+
 
 .station-bottom-line{
   height: 0;
@@ -187,8 +118,8 @@
 }
 .window-wrap{
   /* display: none; */
-  border-radius: 10vw;
-  width: 80vw;
+  border-radius: 10svw;
+  width: 80svw;
 }
 
 }

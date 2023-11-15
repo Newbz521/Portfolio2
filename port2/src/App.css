@@ -1,9 +1,11 @@
 .contents {
   display: flex;
   width: 100%;
-  height: 100vh;
-  border: 1px solid black;
+  height: 100svh;
+  /* border: 1px solid black; */
+  background-color: #001233;
 }
 .app-container{
   overflow: hidden;
+  background-color: #001233;
 }
