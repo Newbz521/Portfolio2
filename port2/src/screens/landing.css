@@ -766,7 +766,7 @@ header {
   margin-top: 0;
   margin-bottom: -10vh;
   z-index: 20;
-  transform: translateX(-35vw);
+  transform: translateX(-20vw) translateY(-5vh);
 }
 
 
