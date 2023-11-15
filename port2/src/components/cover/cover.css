@@ -9,6 +9,7 @@
   align-items: center;
   color: white;
   transition: all 1s ease;
+  transform-origin: right;
 }
 .cover-container{
   display: flex;
@@ -24,7 +25,7 @@
   justify-content: center;
   align-items: center;
   transform: translateY(0);
-  /* transition: all 1s ease; */
+  transition: all 1s ease;
   overflow: hidden;
   transform-origin: 0 0;
   box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
@@ -110,17 +111,7 @@
   position:absolute;
 }
 @media only screen and (max-width: 600px) {
-.station-tag-wrap{
-  display: none;
-}
-.nyc-bg{
-  display: none;
-}
-.window-wrap{
-  /* display: none; */
-  border-radius: 10svw;
-  width: 80svw;
-}
+
 
 }
 

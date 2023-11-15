@@ -28,8 +28,8 @@ function Nav(props) {
 
   return (
  
-    <div className="cover-container" >
-      <div className="cover-hidden" style={shift}> 
+    <div className="cover-container"style={shift} >
+      {/* <div className="cover-hidden" >  */}
       <div className="station-tag-wrap" style={stay}>
         <div style={{height:"100%", width:"50%"}}>
           half
@@ -50,7 +50,7 @@ function Nav(props) {
         </div>
 
       </div>
-      </div>
+      {/* </div> */}
       </div>
   );
 }
