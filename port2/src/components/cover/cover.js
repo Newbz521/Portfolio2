@@ -31,9 +31,9 @@ function Nav(props) {
     <div className="cover-container"style={shift} >
       {/* <div className="cover-hidden" >  */}
       <div className="station-tag-wrap" >
-        <div className="cover-left" >
+        {/* <div className="cover-left" >
           <div></div>
-        </div>
+        </div> */}
         <div className="cover-right">
         <div className="cover-right-container">
 
