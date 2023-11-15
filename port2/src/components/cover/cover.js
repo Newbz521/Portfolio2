@@ -32,9 +32,12 @@ function Nav(props) {
       {/* <div className="cover-hidden" >  */}
       <div className="station-tag-wrap" >
         <div className="cover-left" >
-          half
+          <div></div>
         </div>
         <div className="cover-right">
+        <div className="cover-right-container">
+
+          
         <div className="name-description" style={{fontSize:"2svh"}}>-Hello there!</div>
 
           <div className="name-description">I'm 
@@ -46,7 +49,7 @@ function Nav(props) {
           <div onClick={open} className="enter-button">
             Enter Site
           </div>
-          
+          </div>
         </div>
 
       </div>

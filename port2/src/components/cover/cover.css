@@ -1,16 +1,4 @@
-.cover-hidden{
-  overflow: hidden;
-  display: flex;
-  position: absolute;
-  height: calc(100svh - 50px);
-  width: 100svw;
-  z-index: 2;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transition: all 1s ease;
-  transform-origin: right;
-}
+
 .cover-container{
   display: flex;
   position: absolute;
@@ -24,7 +12,7 @@
   bottom: 0;
   justify-content: center;
   align-items: center;
-  transform: translateY(0);
+  /* transform: translateY(0); */
   transition: all 1s ease;
   overflow: hidden;
   transform-origin: 0 0;
@@ -34,9 +22,22 @@
 .cover-left{
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 .cover-right{
   width:50%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.cover-right-container{
+  border:blue;
+  display: flex;
+  width:fit-content;
   height:100%;
   display: flex;
   flex-direction: column;
@@ -61,8 +62,8 @@
 .enter-button{
   transition: all .25s;
   display: flex;
-  position: absolute;
-  bottom: 10svh;
+  /* position: absolute; */
+
   height: 6svh;
   width: 35svh;
   justify-content: center;
@@ -73,6 +74,7 @@
   color: #6f7491;
   text-transform: uppercase;
   font-weight: bolder;
+  margin-top: 20vh;
 }
 .enter-button:hover {
  background-color: #6f7491;
@@ -111,7 +113,7 @@
   justify-content: center;
 
   gap: -10vh;
-  transition: all 1s ease;
+  /* transition: all 1s ease; */
 }
 
 
@@ -123,13 +125,14 @@
   border: 2px solid white;
   position:absolute;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 
 .cover-left{
   display:none;
 }
 .cover-right{
   width: 100%;
+  align-items: center;
 }
 
 .name-title, .name-description{

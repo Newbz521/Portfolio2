@@ -53,6 +53,8 @@
   width: fit-content;
   align-items: center;
   text-align: center;
+  font-family: 'Anton', sans-serif;
+
   /* overflow: hidden; */
   /* transition: 0.5s ease; */
 }
@@ -65,7 +67,7 @@
   top: 0;
   left: 0;
 } */
-.link-name{
+/* .link-name{
   display:none;
-}
+} */
 }

@@ -19,7 +19,7 @@ function Nav(props) {
       <div className="stickyNav">
         <li onClick={props.clickProjects} className="navLink">
           <div className="icon selected">
-            <SiCodesandbox />
+            {/* <SiCodesandbox /> */}
             <span className="link-name">
 
             Projects
@@ -28,16 +28,16 @@ function Nav(props) {
         </li>
         <li onClick={props.clickAboutMe} className="navLink">
           <div className="icon selected">
-            <CgProfile />
+            {/* <CgProfile /> */}
             <span className="link-name">
 
-            About
+             About
             </span>
           </div>
         </li>
         <li onClick={props.clickContact} className="navLink">
           <div className="icon selected">
-            <RiContactsLine />
+            {/* <RiContactsLine /> */}
             <span className="link-name">
 
             Contacts
