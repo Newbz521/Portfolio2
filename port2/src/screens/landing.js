@@ -148,12 +148,12 @@ export default function Landing(props) {
 
   return (
     <>
-      <div className="bigWrap">
         <Navbar
           clickAboutMe={clickAboutMe}
           clickProjects={clickProjects}
           clickContact={clickContact}
         ></Navbar>
+      <div className="bigWrap">
 
         <div className="overallContainer">
           <div className="contentContainer">

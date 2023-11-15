@@ -20,16 +20,28 @@ function Nav(props) {
         <li onClick={props.clickProjects} className="navLink">
           <div className="icon selected">
             <SiCodesandbox />
+            <span className="link-name">
+
+            Projects
+            </span>
           </div>
         </li>
         <li onClick={props.clickAboutMe} className="navLink">
           <div className="icon selected">
             <CgProfile />
+            <span className="link-name">
+
+            About
+            </span>
           </div>
         </li>
         <li onClick={props.clickContact} className="navLink">
           <div className="icon selected">
             <RiContactsLine />
+            <span className="link-name">
+
+            Contacts
+            </span>
           </div>
         </li>
       </div>

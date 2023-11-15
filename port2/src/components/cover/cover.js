@@ -31,10 +31,10 @@ function Nav(props) {
     <div className="cover-container"style={shift} >
       {/* <div className="cover-hidden" >  */}
       <div className="station-tag-wrap" style={stay}>
-        <div style={{height:"100%", width:"50%"}}>
+        <div className="cover-left" >
           half
         </div>
-        <div style={{ height: "100%", width: "50%", display: "flex", justifyContent: "center", alignItems: "flex-start", flexDirection: "column" }}>
+        <div className="cover-right">
         <div className="name-description" style={{fontSize:"2svh"}}>-Hello there!</div>
 
           <div className="name-description">I'm 

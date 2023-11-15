@@ -22,12 +22,13 @@
   align-items: center;
   padding-right: 10px;
   padding-left: 10px;
+   /* border:1px solid blue */
 }
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
+  width: fit-content;
   height: 30px;
 
   text-align: center;
@@ -49,7 +50,7 @@
   justify-content: center;
   flex-direction: row;
   height: 30px;
-  width: 30px;
+  width: fit-content;
   align-items: center;
   text-align: center;
   /* overflow: hidden; */
@@ -64,5 +65,7 @@
   top: 0;
   left: 0;
 } */
-
+.link-name{
+  display:none;
+}
 }
