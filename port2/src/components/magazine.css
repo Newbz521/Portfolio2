@@ -6,7 +6,7 @@
   height: 70vh;
   width: calc(70vh / 1.29);
   background-color: rgb(241, 61, 61);
-  z-index: 8;
+  z-index: 30;
   transform: scale(1);
   animation: slideIn 0.5s;
   box-shadow: 0 0 10px 2px rgb(246, 246, 246);
