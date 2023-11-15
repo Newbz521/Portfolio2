@@ -1611,6 +1611,7 @@ header {
   }
   .benchContainer{
     height: 100%;
+    transform: translateX(-20%) translateY(-5%);
   }
 
   .lampContainer{
@@ -1639,6 +1640,7 @@ header {
   .storeContainer {
     width: 90%;
   }
+
   .infoContainer {
     width: 90%;
   }
@@ -1646,12 +1648,13 @@ header {
     width:100%;
   }
   .overallContainer {
-    width: 400%;
+    width: 300%;
   }
   .landingContainer2 {
-    width: 200%;
+    width: 90%;
   }
   .kioskContainer {
+    display: none;
     width: 90%;
   }
   .chatContainer {
@@ -1659,6 +1662,7 @@ header {
     width: 50vw;
   }
   .kiosk {
+    
     width: 70%;
     height: 80%;
   }
