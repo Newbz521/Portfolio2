@@ -30,7 +30,7 @@
   align-items: center;
   width: fit-content;
   height: 30px;
-
+  padding: 0 5px 0 5px;
   text-align: center;
   font-size: 25px;
   border: 2px solid rgb(248, 248, 142, 0);

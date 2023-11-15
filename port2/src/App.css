@@ -8,4 +8,5 @@
 .app-container{
   overflow: hidden;
   background-color: #001233;
+  z-index: -1;
 }
