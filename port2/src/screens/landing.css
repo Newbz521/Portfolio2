@@ -243,8 +243,15 @@ header {
   width: 84%;
   height: 100%;
   border: 1px solid rgb(18, 58, 18);
-  background-color: rgb(10, 68, 10);
+  /* background-color: rgb(10, 68, 10); */
   z-index: 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(10, 68, 10,.75),
+    rgb(10, 68, 10,.75)
+  ),
+  url("./dotted_black_background.jpg");
+  background-size: 400px 200px;
 }
 .stationName {
   display: flex;
@@ -458,7 +465,10 @@ header {
   height: 20%;
   width: 100%;
   /* border-bottom: 1px solid rgb(32, 32, 32); */
-  background: linear-gradient(to bottom,white, #656566, #656566, rgb(149, 148, 148), #9e9e9e);
+  background: linear-gradient(to bottom,white, rgb(101, 101, 102,.5), rgb(101, 101, 102,.5), rgb(149, 148, 148,.5), #9e9e9e),
+  url("./dotted_black_background.jpg");
+  background-size: 1000px 500px;
+  /* background: linear-gradient(to bottom,white, #656566, #656566, rgb(149, 148, 148), #9e9e9e); */
   z-index: 2;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -494,7 +504,11 @@ header {
   width: 11%;
   height: 100%;
   border: 0.5px solid grey;
-  background: linear-gradient(to right, #acadb1, rgb(194, 192, 192), #a1a1a3);
+  background: linear-gradient(to right, rgb(172, 173, 177), rgb(194, 192, 192), rgb(161, 161, 163));
+
+  background: linear-gradient(to right, rgb(172, 173, 177,.75), rgb(194, 192, 192,.75), rgb(149, 148, 148,.5), rgb(161, 161, 163,.75)),
+  url("./dotted_black_background.jpg");
+  background-size: 500px 250px;
 }
 .storeCenter {
   width: 78%;
@@ -894,6 +908,8 @@ header {
   font-weight: bolder;
   justify-content: center;
   align-items: center;
+  font-family: 'Anton', sans-serif;
+
  
   /* width: fit-content; */
 }
@@ -1771,9 +1787,14 @@ header {
   color: black;
   box-shadow: 5px 5px 8px 1px rgb(0, 0, 0, 0.6);
   transition-duration: 0.5s;
+  font-family: 'Anton', sans-serif;
+
 }
 .flierText {
   color: rgb(104, 103, 103);
+  font-family: 'Anton', sans-serif;
+
+  
 }
 .flier:hover {
   box-shadow: 2px 2px 1px 0.5px rgb(0, 0, 0, 0.3);
