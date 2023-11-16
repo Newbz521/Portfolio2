@@ -379,7 +379,7 @@ export default function Landing(props) {
                                             onClick={changeProject}
                                             data-key={data.tag}
                                           >
-                                              <div onClick={changeProject} data-key={data.tag} style={{ position: "relative",background:`url(${data.img})`,backgroundSize:"cover" ,margin: "3px", marginTop: "3px", width: "100%", height: "60%", backgroundPosition:"center" }}></div>
+                                              <div onClick={changeProject} data-key={data.tag} style={{imageRendering:"pixelated" ,position: "relative",background:`url(${data.img})`,backgroundSize:"cover" ,margin: "3px", marginTop: "3px", width: "100%", height: "60%", backgroundPosition:"center" }}></div>
                                             <p style={{position:"absolute"}}>
 
                                               {data.tag}
@@ -544,21 +544,8 @@ export default function Landing(props) {
                               <div className="kioskOff">Who am I?</div>
                               <div className="kioskText">
                                 {" "}
-                                From architecture designer to software engineer,
-                                I bring experience in turning a simple idea into
-                                reality. Included in this process are the unsure
-                                beginnings of pre-planning, to the nitty gritty
-                                works of production up to the beauty of project
-                                completion. In order to execute all these steps,
-                                I am well versed in working as a team in order
-                                to provide the best quality of work throughout
-                                every phase. I am aiming to utilize my
-                                experiences in order to support the ongoing
-                                development of software engineering. For a field
-                                still so young, I will work towards growing
-                                alongside the seemingly infinite potential of
-                                software, further improving the lives of
-                                everyone around us.{" "}
+                                Software Engineer with a background in architecture design, with expertise in turning mock designs into buildable code.
+                                {" "}
                               </div>
                             </div>
                           </div>
