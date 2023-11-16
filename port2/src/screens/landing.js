@@ -355,10 +355,14 @@ export default function Landing(props) {
                                         data.row.includes("1") && (
                                           <div
                                             className="magazine"
-                                            data-key={data.tag}
                                             onClick={changeProject}
+                                            data-key={data.tag}
                                           >
-                                            {data.tag}
+                                            <div onClick={changeProject} data-key={data.tag} style={{ position: "relative",background:`url(${data.img})`,backgroundSize:"cover" ,margin: "3px", marginTop: "3px", width: "100%", height: "60%", backgroundPosition:"center" }}></div>
+                                            <p style={{position:"absolute", color:"white"}}>
+
+                                              {data.tag}
+                                            </p>
                                           </div>
                                         )
                                     )}
@@ -372,10 +376,14 @@ export default function Landing(props) {
                                         data.row.includes("2") && (
                                           <div
                                             className="magazine"
-                                            data-key={data.tag}
                                             onClick={changeProject}
+                                            data-key={data.tag}
                                           >
-                                            {data.tag}
+                                              <div onClick={changeProject} data-key={data.tag} style={{ position: "relative",background:`url(${data.img})`,backgroundSize:"cover" ,margin: "3px", marginTop: "3px", width: "100%", height: "60%", backgroundPosition:"center" }}></div>
+                                            <p style={{position:"absolute"}}>
+
+                                              {data.tag}
+                                            </p>
                                           </div>
                                         )
                                     )}
