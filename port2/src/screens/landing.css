@@ -2007,7 +2007,9 @@ header {
   .benchContainer{
     height: 100%;
     /* transform: translateX(-20vw) translateY(-5vh) scale(1); */
-    transform: translateX(-20%) translateY(-5%) scale(1);
+    transform: translateX(-20%) translateY(-5%) scale(.9);
+    transform-origin: bottom;
+    
   }
 
   .lampContainer{
@@ -2017,6 +2019,8 @@ header {
   .store {
     width: 90%;
     height: 80%;
+    transform-origin: bottom;
+    transform: scale(.9);
   }
   .magazine {
     font-size: 12px;
@@ -2066,6 +2070,8 @@ header {
   .info {
     width: 90%;
     height: 80%;
+    transform-origin: bottom;
+    transform: scale(.85);
   }
   .backDrop {
     background-size: 15%;
