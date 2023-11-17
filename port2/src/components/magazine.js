@@ -21,9 +21,9 @@ export default function Magazine(props) {
           <p>"The Next Big {props.title}"</p>
           <img className="screenShot" src={props.img}></img>
           <p>
-            Now available on:{" "}
+            Now available:{" "}
             <a className="links" href={props.url} target="_blank">
-              Netlify
+              Online
             </a>
           </p>
           <p>
