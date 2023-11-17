@@ -21,6 +21,7 @@ import { Parallax, Background } from "react-parallax";
 import Resume from "../files/Resume.pdf";
 import Window from "../components/backWindow.js";
 import { MdFullscreenExit } from "react-icons/md";
+// import Dotted from "./dotted.png"
 
 export default function Landing(props) {
   const [show, setShow] = useState("none");
@@ -310,6 +311,7 @@ export default function Landing(props) {
                       
                         <div className="store">
                           <div className="storeTop">
+                            
                             <div className="storeName">NEWSSTAND</div>
                           </div>
                           <div className="storeBottom">
@@ -568,7 +570,7 @@ export default function Landing(props) {
                     <div className="station">
                       <div className="pole rightPole">
                         <div className="poleThick"></div>
-                        <div className="poleCenter"></div>
+                        <div className="poleCenter"> </div>
                         <div className="poleThick"></div>
                       </div>
                       <div className="storeContainer">
@@ -623,7 +625,7 @@ export default function Landing(props) {
                           </div>
                         </div>
                         <div className="poleThick"></div>
-                        <div className="poleCenter"></div>
+                        <div className="poleCenter"> </div>
                         <div className="poleThick"></div>
                       </div>
                     </div>

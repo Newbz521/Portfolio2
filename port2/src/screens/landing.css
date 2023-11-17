@@ -74,6 +74,7 @@ header {
       rgba(73, 73, 73, 0.85)
     ),
     url("./tiles.jpg");
+    background-size: 300px 200px;
 
   justify-content: space-evenly;
   align-items: flex-end;
@@ -81,7 +82,6 @@ header {
   overflow: hidden;
   flex-direction: row;
   /* background-repeat: no-repeat; */
-  background-size: 300px 200px;
   filter:blur(2px);
 }
 .backStation {
@@ -215,17 +215,33 @@ header {
   overflow: hidden;
   z-index: 10;
   box-shadow: 0 0 5px 1px rgb(2, 77, 2);
+  background-color: rgb(8, 65, 8);
   box-shadow:  
-  11px 2px 0px #000000,
-  12px 3px 0px #000000,
-  13px 4px 0px #000000,
-  14px 5px 0px #000000,
-  15px 6px 0px #000000,
-  16px 7px 0px #000000,
-  17px 8px 0px #000000,
+
+  1px .5px 0px #000000,
+  2px 1px 0px #000000,
+  3px 1.5px 0px #000000,
+  4px 2px 0px #000000,
+  5px 2.5px 0px #000000,
+
+  6px 3px 0px #000000,
+  7px 3.5px 0px #000000,
+  8px 4px 0px #000000,
+  9px 4.5px 0px #000000,
+  10px 5px 0px #000000,
+  
+  11px 5.5px 0px #000000,
+  12px 6px 0px #000000,
+  13px 6.5px 0px #000000,
+  14px 7px 0px #000000,
+  15px 7.7px 0px #000000,
+
+  16px 8px 0px #000000,
+  17px 8.5px 0px #000000,
   18px 9px 0px #000000,
-  19px 10px 0px #000000
-;
+  19px 9.5px 0px #000000,
+  20px 10px 0px #000000
+  ;
 }
 .poleMid {
   position: absolute;
@@ -238,6 +254,9 @@ header {
   background-color: rgb(7, 80, 7);
   box-shadow: 0px 0px 15px 10px rgb(18, 58, 18);
   z-index: 1;
+  background: linear-gradient(to bottom, rgb(7, 80, 7,.85), rgb(7, 80, 7,.85)),
+  url("./dotted.jpg");
+  background-size: 400px 200px;
 }
 .poleCenter {
   width: 84%;
@@ -250,9 +269,21 @@ header {
     rgb(10, 68, 10,.75),
     rgb(10, 68, 10,.75)
   ),
-  url("./dotted_black_background.jpg");
+  url("./dotted.jpg");
   background-size: 400px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+/* .poleCenter > img{
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: invert(18%) sepia(78%) saturate(513%) hue-rotate(71deg) brightness(96%) contrast(101%);
+} */
+
+
 .stationName {
   display: flex;
   justify-content: center;
@@ -303,7 +334,7 @@ header {
   align-items: center;
   /* border: 1px solid blue; */
   z-index: 8;
-  overflow: hidden;
+  /* overflow: hidden; */
   flex-direction: column;
 }
 .lampContainer {
@@ -407,7 +438,10 @@ header {
   height: 5%;
   width: fit-content;
   text-wrap: nowrap;
-  background-color: rgb(48, 48, 48);
+  /* background-color: rgb(48, 48, 48); */
+  background: linear-gradient(to bottom, rgba(31, 31, 32, 0.85), rgba(31, 31, 32, 0.85)),
+  url("./dotted.jpg");
+  background-size: 800px 400px;
   border-radius: 1px;
   padding: 15px;
   padding-top: 20px;
@@ -419,18 +453,31 @@ header {
   text-align: center;
   /* box-shadow: 0 0 5px 2px rgb(90, 89, 89); */
   box-shadow:  
-  1px 0px 0px #000000,
-  1.5px .5px 0px #000000,
+
+  1px .5px 0px #000000,
   2px 1px 0px #000000,
-  3px 2px 0px #000000,
-  4px 3px 0px #000000,
-  5px 4px 0px #000000,
-  6px 5px 0px #000000,
-  2.5px 1.5px 0px #000000,
-  3.5px 2.5px 0px #000000,
-  4.5px 3.5px 0px #000000,
-  5.5px 4.5px 0px #000000,
-  6.5px 5.5px 0px #000000;
+  3px 1.5px 0px #000000,
+  4px 2px 0px #000000,
+  5px 2.5px 0px #000000,
+
+  6px 3px 0px #000000,
+  7px 3.5px 0px #000000,
+  8px 4px 0px #000000,
+  9px 4.5px 0px #000000,
+  10px 5px 0px #000000,
+  
+  11px 5.5px 0px #000000,
+  12px 6px 0px #000000,
+  13px 6.5px 0px #000000,
+  14px 7px 0px #000000,
+  15px 7.7px 0px #000000,
+
+  16px 8px 0px #000000,
+  17px 8.5px 0px #000000,
+  18px 9px 0px #000000,
+  19px 9.5px 0px #000000,
+  20px 10px 0px #000000
+  ;
   font-family: 'Anton', sans-serif;
 
   z-index:1;
@@ -449,15 +496,42 @@ header {
   filter: brightness(0.9);
   z-index: 8;
   box-shadow:  
-                11px 2px 0px #000000,
-                12px 3px 0px #000000,
-                13px 4px 0px #000000,
-                14px 5px 0px #000000,
-                15px 6px 0px #000000,
-                16px 7px 0px #000000,
-                17px 8px 0px #000000,
-                18px 9px 0px #000000,
-                19px 10px 0px #000000
+
+  1px 0px 0px #000000,
+  2px .5px 0px #000000,
+  3px 1px 0px #000000,
+  4px 1.5px 0px #000000,
+  5px 2px 0px #000000,
+
+  6px 2.5px 0px #000000,
+  7px 3px 0px #000000,
+  8px 3.5px 0px #000000,
+  9px 4px 0px #000000,
+  10px 4.5px 0px #000000,
+  
+  11px 5px 0px #000000,
+  12px 5.5px 0px #000000,
+  13px 6px 0px #000000,
+  14px 6.5px 0px #000000,
+  15px 7px 0px #000000,
+
+  16px 7.5px 0px #000000,
+  17px 8px 0px #000000,
+  18px 8.5px 0px #000000,
+  19px 9px 0px #000000,
+  20px 9.5px 0px #000000,
+
+  21px 10px 0px #000000,
+  22px 10.5px 0px #000000,
+  23px 11px 0px #000000,
+  24px 11.5px 0px #000000,
+  25px 12px 0px #000000,
+
+  26px 12.5px 0px #000000,
+  27px 13px 0px #000000,
+  28px 13.5px 0px #000000,
+  29px 14px 0px #000000,
+  30px 14.5px 0px #000000
   ;
 }
 
@@ -465,16 +539,19 @@ header {
   height: 20%;
   width: 100%;
   /* border-bottom: 1px solid rgb(32, 32, 32); */
-  background: linear-gradient(to bottom,white, rgb(101, 101, 102,.5), rgb(101, 101, 102,.5), rgb(149, 148, 148,.5), #9e9e9e),
-  url("./dotted_black_background.jpg");
-  background-size: 1000px 500px;
+  background: linear-gradient(to bottom, rgb(101, 101, 102,.5), rgb(101, 101, 102,.5)),
+  url("./dotted.jpg");
+  background-size: 700px 350px;
   /* background: linear-gradient(to bottom,white, #656566, #656566, rgb(149, 148, 148), #9e9e9e); */
   z-index: 2;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
+
+
 .storeName {
   display: flex;
   justify-content: center;
@@ -504,10 +581,8 @@ header {
   width: 11%;
   height: 100%;
   border: 0.5px solid grey;
-  background: linear-gradient(to right, rgb(172, 173, 177), rgb(194, 192, 192), rgb(161, 161, 163));
-
-  background: linear-gradient(to right, rgb(172, 173, 177,.75), rgb(194, 192, 192,.75), rgb(149, 148, 148,.5), rgb(161, 161, 163,.75)),
-  url("./dotted_black_background.jpg");
+  background: linear-gradient(to bottom, rgb(101, 101, 102,.5), rgb(101, 101, 102,.5)),
+  url("./dotted.jpg");
   background-size: 500px 250px;
 }
 .storeCenter {
@@ -572,10 +647,13 @@ header {
   display: flex;
   height: 55%;
   width: 100%;
-  background-color: rgb(186, 189, 186);
+  /* background-color: rgb(186, 189, 186); */
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(to bottom, rgba(218, 218, 218, 0.5), rgba(218, 218, 218, 0.5)),
+  url("./dotted.jpg");
+  background-size: 400px 200px;
 }
 
 .magRow {
@@ -601,24 +679,25 @@ header {
   width: calc(7.5vh / 1.3);
   background-color: rgb(250, 53, 53);
   color: white;
+  text-shadow: 1px 1px 0 black;
   justify-content: center;
   align-items: center;
   z-index: 8;
   box-shadow: 0 0 5px 2px rgb(250, 116, 116);
   transition: all .25s ease-in-out;
   box-shadow:  
-  1px 0px 0px #000000,
-  1.5px .5px 0px #000000,
-  2px 1px 0px #000000,
-  3px 2px 0px #000000,
-  4px 3px 0px #000000,
-  5px 4px 0px #000000,
-  6px 5px 0px #000000,
-  2.5px 1.5px 0px #000000,
-  3.5px 2.5px 0px #000000,
-  4.5px 3.5px 0px #000000,
-  5.5px 4.5px 0px #000000,
-  6.5px 5.5px 0px #000000;
+  1px 0px 0px #510303,
+  1.5px .5px 0px #510303,
+  2px 1px 0px #510303,
+  3px 2px 0px #510303,
+  4px 3px 0px #510303,
+  5px 4px 0px #510303,
+  6px 5px 0px #510303,
+  2.5px 1.5px 0px #510303,
+  3.5px 2.5px 0px #510303,
+  4.5px 3.5px 0px #510303,
+  5.5px 4.5px 0px #510303,
+  6.5px 5.5px 0px #510303;
 }
 .magazine:hover {
   transform: scale(2.5);
@@ -764,11 +843,32 @@ header {
   border: 1px solid grey;
   background-color: rgb(177, 174, 174);
   box-shadow:  
-  5px 2px 0px #000000,
+
+  1px .5px 0px #000000,
+  2px 1px 0px #000000,
+  3px 1.5px 0px #000000,
+  4px 2px 0px #000000,
+  5px 2.5px 0px #000000,
+
   6px 3px 0px #000000,
-  7px 4px 0px #000000,
-  8px 5px 0px #000000,
-  9px 6px 0px #000000;
+  7px 3.5px 0px #000000,
+  8px 4px 0px #000000,
+  9px 4.5px 0px #000000,
+  10px 5px 0px #000000,
+  
+  11px 5.5px 0px #000000,
+  12px 6px 0px #000000,
+  13px 6.5px 0px #000000,
+  14px 7px 0px #000000,
+  15px 7.7px 0px #000000,
+
+  16px 8px 0px #000000,
+  17px 8.5px 0px #000000,
+  18px 9px 0px #000000,
+  19px 9.5px 0px #000000,
+  20px 10px 0px #000000
+  ;
+
 }
 .kioskLeft {
   border-radius: 10px 0 0 0;
@@ -1318,11 +1418,12 @@ header {
   height: 120px;
   border: 1px solid rgba(0, 0, 0, 0.288);
   background: radial-gradient(#faf8f8, #e8f07f, yellow);
+
   border-radius: 30px 30px 120px 120px;
   margin: 2px;
   margin-left: 5px;
   margin-right: 5px;
-  box-shadow: 0 0px 20px 1px rgba(255, 255, 255, 0.8);
+  /* box-shadow: 0 0px 20px 1px rgba(255, 255, 255, 0.8); */
   box-shadow:  
   1px 0px 0px #000000,
   1.5px .5px 0px #000000,
@@ -1708,11 +1809,31 @@ header {
   border: 1px solid grey;
   background-color: rgb(177, 174, 174);
   box-shadow:  
-  5px 2px 0px #000000,
+
+  1px .5px 0px #000000,
+  2px 1px 0px #000000,
+  3px 1.5px 0px #000000,
+  4px 2px 0px #000000,
+  5px 2.5px 0px #000000,
+
   6px 3px 0px #000000,
-  7px 4px 0px #000000,
-  8px 5px 0px #000000,
-  9px 6px 0px #000000;
+  7px 3.5px 0px #000000,
+  8px 4px 0px #000000,
+  9px 4.5px 0px #000000,
+  10px 5px 0px #000000,
+  
+  11px 5.5px 0px #000000,
+  12px 6px 0px #000000,
+  13px 6.5px 0px #000000,
+  14px 7px 0px #000000,
+  15px 7.7px 0px #000000,
+
+  16px 8px 0px #000000,
+  17px 8.5px 0px #000000,
+  18px 9px 0px #000000,
+  19px 9.5px 0px #000000,
+  20px 10px 0px #000000
+  ;
 }
 
 .infoMiddle {

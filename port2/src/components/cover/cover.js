@@ -17,11 +17,11 @@ function Nav(props) {
     setSlide({ transform: "translateX(-120%)" })
     // setStay({ transform: "translateY(100%)" })
     setInterval(function () {setStay({ transform: "translateX(-100%)" });
-  }, 1000)
+  }, 300)
   //   setInterval(function () { setShift({ transform:"translateX(100%)"  });
   // }, 1000)
     setInterval(function () { setShift({ height: "0", "transform-origin": "0 0"  });
-    }, 1000)
+    }, 300)
     // setInterval(function () { setShift({ display: "none", height: "0"})
     // }, 3000)
   }
