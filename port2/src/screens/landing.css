@@ -1979,15 +1979,36 @@ header {
     height: 70%;
   }
 }
-@media only screen and (min-width:601px) and  (max-width: 930px) {
+@media only screen and (min-width:601px) and  (max-width: 850px) {
   .kioskContainer {
     display: none;
     width: 90%;
   }
-
+  .charMovement{
+    transform: translateY(5svh) scale(1.2);
+  }
   .benchContainer{
     height: 100%;
-    transform: translateX(-20%) translateY(-15%) scale(1.2);
+    transform: translateX(-20%) translateY(-15svh) scale(1.2);
+  }
+  .store{
+    width: 100%;
+  }
+  .info{
+    width: 70%;
+  }
+}
+@media only screen and (min-width:851px) and  (max-width: 1150px) {
+  .kioskContainer {
+    display: none;
+    width: 90%;
+  }
+  .charMovement{
+    transform: translateY(5svh) scale(1.4);
+  }
+  .benchContainer{
+    height: 100%;
+    transform: translateX(-20%) translateY(-25svh) scale(1.5);
   }
   .store{
     width: 100%;
