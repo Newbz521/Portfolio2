@@ -10,8 +10,14 @@ export default function Magazine(props) {
   function closeProject() {
     props.setCurrent("none");
   }
+  const [isScrollDisabled, setIsScrollDisabled] = useState(true);
+  useEffect(() => {
+    document.body.style.overflowY = isScrollDisabled ? "hidden" : "auto";
+  }, [isScrollDisabled]);
   return (
     <>
+      {/* <div className="modalBG"> */}
+
       <div className="projectMagContainer">
         <div className="magCover">
           <div className="closer" onClick={closeProject}>
@@ -26,14 +32,16 @@ export default function Magazine(props) {
               Online
             </a>
           </p>
-          <p>
+         {props.git && <p>
             More info on:{" "}
             <a className="links" href={props.git} target="_blank">
               GitHub
             </a>
-          </p>
+          </p>}
         </div>
-      </div>
+        </div>
+        
+        {/* </div> */}
     </>
   );
 }

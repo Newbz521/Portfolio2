@@ -38,7 +38,7 @@
   border: 2px solid rgb(248, 248, 142, 0);
   transition-duration: 0.75s;
   border-radius: 10px;
-  /* text-shadow: 1px 1px 0px black; */
+  text-shadow: 1px 1px 0px black;
 }
 .icon:hover {
   cursor: pointer;
@@ -61,7 +61,7 @@
 .navLink {
   display: flex;
   text-decoration: none;
-  color: #6f7491;
+  color: white;
   justify-content: center;
   flex-direction: row;
   height: 30px;
@@ -69,7 +69,7 @@
   align-items: center;
   text-align: center;
   font-family: 'Anton', sans-serif;
-  /* text-shadow: 1px 1px 0px black; */
+  text-shadow: 1px 1px 0px black;
   /* overflow: hidden; */
   /* transition: 0.5s ease; */
 }

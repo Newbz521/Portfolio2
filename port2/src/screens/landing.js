@@ -6,6 +6,7 @@ import DDR from "../files/DDR.jpeg";
 import Inner from "../files/inner.jpeg";
 import Maps from "../files/maps.jpeg";
 import Hater from "../files/Hater.jpeg";
+import ROTRK from "../files/town.png"
 import ezML from "../files/ezML.png"
 import Bubble from "../files/bubble.png";
 import Marble from "../files/marble.png"
@@ -43,6 +44,15 @@ export default function Landing(props) {
   }
 
   const allProjects = [
+    {
+      name: "ROTRK",
+      git: "",
+      url: "https://RiseOfTheRatKing.com",
+      img: ROTRK,
+      tag: "ROTRK",
+      project: "project1",
+      row: "1",
+    },
     {
       name: "ezML",
       git: "",
@@ -361,7 +371,7 @@ export default function Landing(props) {
                                             data-key={data.tag}
                                           >
                                             <div onClick={changeProject} data-key={data.tag} style={{ position: "relative",background:`url(${data.img})`,backgroundSize:"cover" ,margin: "3px", marginTop: "3px", width: "100%", height: "60%", backgroundPosition:"center" }}></div>
-                                            <p style={{position:"absolute", color:"white"}}>
+                                            <p style={{position:"absolute", color:"white", pointerEvents:"none"}}>
 
                                               {data.tag}
                                             </p>
